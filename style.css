@@ -355,15 +355,15 @@ span{
 }
 /* Fin Medias Tablet */
 
-/* Medias Desktop */
+/* Medias Desktop 1 */
 @media only screen and (min-width: 969px) and (max-width:1024px) {
-        .grid-container { 
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 3.75em 8.75em 7.5em 10em 3.75em 8.75em 7.5em 10em 6.8em;
-            gap: 1.12em 0.93em;
-            grid-auto-flow: row;
-            grid-template-areas:
+    .grid-container { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 3.75em 8.75em 7.5em 10em 3.75em 8.75em 7.5em 10em 6.8em;
+        gap: 1.12em 0.93em;
+        grid-auto-flow: row;
+        grid-template-areas:
             "tit1 tit1 tit1"
             "lared lared lared"
             "franquicias franquicias franquicias"
@@ -373,30 +373,26 @@ span{
             "video video video"
             "video video video"
             "mision mision mision";
-        }
-        .grid-uno { grid-area: tit1; }
-        .grid-tres { grid-area: lared; }
-        .grid-cinco {grid-area: franquicias; }
-        .grid-seis {grid-area: vision;}
-        .grid-dos {grid-area: tit2;}
-        .grid-cuatro {grid-area: promo;}
-        .grid-siete {grid-area: video;}
-        .grid-ocho {grid-area: mision;}
-        .grid-item {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.1em;
-            color: #5c5b5b;
-            margin: 0;
-        }
-        video {
-            height: 112%;
-        }
-        .grid-ocho {
-            padding-top: 1em;
-        }
+    }
+    .grid-uno { grid-area: tit1; }
+    .grid-tres { grid-area: lared; }
+    .grid-cinco {grid-area: franquicias; }
+    .grid-seis {grid-area: vision;}
+    .grid-dos {grid-area: tit2;}
+    .grid-cuatro {grid-area: promo;}
+    .grid-siete {grid-area: video;}
+    .grid-ocho {grid-area: mision;}
+    .grid-item {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1em;
+        color: #5c5b5b;
+        margin: 0;
+    }
+    video {
+        height: 112%;
+    }
+    .grid-ocho {
+        padding-top: 1em;
+    }
 }
 /* Fin Medias Desktop */
-
-
-
-
