@@ -10,6 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="la red del vino, mendoza, boutique de vinos, vinos">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Link a CSS-->
     <link rel="stylesheet" href="style.css">
     <!--Titulo Pestaña-->
@@ -18,110 +21,184 @@
 
 <body>
     <!-- Header-->
-    <header class="header-contenedor">
-        <nav class="menu-contenedor">
-            <ul class="menu">
-                <li class="logo"><img src="./imagenes/imagenes/primer-logo.png" alt="Logo-lared-delvino"></li>
-                <li class="nav-animation"><a href="index.html">Home</a></li>
-                <li class="nav-animation"><a href="#sec-uno">Quiénes Somos</a></li>
-                <li class="nav-animation"><a href="#caracteristicas">Características del producto</a></li>
-                <li class="nav-animation"><a href="">Trabajá con Nosotros</a></li>
-                <li class="nav-animation"><a href="">Contacto</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid contenedor-fluido">
+                <a class="navbar-brand" href="index.html"><img src="./imagenes/imagenes/primer-logo.png"
+                        alt="Logo-lared-delvino"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse row" id="navbarNav">
+                    <ul class="navbar-nav col-12 justify-content-end barra-navegacion">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#sec-uno">Quienes Somos / Que
+                                Hacemos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Características del Producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Trabajá con Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="contenedor">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="la-red">La Red del Vino</h1>
+                            </div>
+                            <div class="col-12">
+                                <h2 class="titulo">VINOS DIRECTOS DE BODEGAS BOUTIQ<u>UE</u></h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div class="contenedor">
-            <h1 class="la-red">La Red del Vino</h1>
-            <h2 class="titulo">VINOS DIRECTOS DE BODEGAS BOUTIQ<u>UE</u></h2>
-        </div>
     </header>
     <!--Fin Header-->
 
-
-    <!--Seccion uno -->
-    <!--Grilla-->
-    <section class="grid-container" id="sec-uno">
-        <div class="grid-item grid-uno">
-            <h2 class="grid-titulo"> Q<u>uienes Somos</u> </h2>
+    <!--Seccion Uno-->
+    <section class="container" id="sec-uno">
+        <!--fila-->
+        <div class="row">
+            <!--Col 6-->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h2 class="d-flex justify-content-center titulo"> Quienes Somos</h2>
+                <p><strong>La Red del vino</strong> se trata de un grupo de emprendedores independientes que conformamos
+                    una red de distribución de vinos familiares y artesanales, provenientes de bodegas boutique de la
+                    provincia de
+                    Mendoza, con proyección de
+                    venta en todo el país.</p>
+            </div>
+            <!--Col 6-->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h2 class="d-flex justify-content-center titulo">Que Hacemos</h2>
+                <p> <strong>Promocionamos</strong> vinos de pequeños productores mendocinos que no ingresan en el
+                    circuito comercial de
+                    grandes mayorista o cadenas de distribución tradicionales, como hipermercados o supermercados. De
+                    este modo, se trabaja con marcas de manera exclusiva.</p>
+            </div>
         </div>
-        <div class="grid-item  grid-dos">
-            <h2 class="grid-titulo">Q<u>ue Hacemos</u> </h2>
+        <!--Fila-->
+        <div class="row justify-content-center">
+            <!--Col 12-->
+            <div class="col-sm-12 col-md-9 col-lg-9 mt-3 mb-3">
+                <p>En la actualidad contamos con franquicias en la provincia de Buenos Aires, con miras a expandirnos en
+                    las múltiples regiones de nuestro país, acercando uno de los productos más nobles y autóctonos de
+                    nuestra tierra.</p>
+            </div>
         </div>
-        <div class="grid-item grid-tres">
-            <p><strong>La Red del vino</strong> se trata de un grupo de emprendedores independientes que conformamos una red de
-                distribución de vinos familiares y artesanales, provenientes de bodegas boutique de la provincia de
-                Mendoza, con proyección de
-                venta en todo el país.</p>
+        <!--fila-->
+        <div class="row">
+            <!--Col 6-->
+            <div class="col-sm-12 col-md-6 col-lg-6 ">
+                <h2 class="d-flex justify-content-center titulo"> Nuestra visión</h2>
+                <p>Está dirigida a consolidarnos en la Red líder de distribución de vinos
+                    boutique de origen mendocino, a través de la presencia de representantes en diversos puntos del país
+                    ofreciendo vinos fuera de serie, libres de códigos de barra y con sabores auténticos.</p>
+            </div>
+            <!--Col 6-->
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <h2 class="d-flex justify-content-center titulo"> Nuestra visión</h2>
+                <p> Para alcanzar este cometido, es brindar un producto que se destaca por
+                    ser exclusivo, producido en series limitadas y bajo un cuidadoso proceso de selección y elaboración,
+                    siempre procurando un servicio de calidad, a través de una venta simple y directa de la mano de
+                    nuestros
+                    representantes regionales, haciendo énfasis en el consumo responsable.</p>
+            </div>
         </div>
-        <div class="grid-item grid-cuatro">
-            <p>Promocionamos vinos de pequeños productores mendocinos que no ingresan en el circuito comercial de grandes mayorista o cadenas de distribución tradicionales, como hipermercados o supermercados. De este modo, se trabaja con marcas de manera exclusiva.</p>
-        </div>
-        <div class="grid-item grid-cinco">
-            <p>En la actualidad contamos con franquicias en la provincia de Buenos Aires, con miras a expandirnos en las
-                múltiples regiones de nuestro país, acercando uno de los productos más nobles y autóctonos de nuestra
-                tierra.</p>
-        </div>
-        <div class="grid-item grid-seis">
-            <p><strong> Nuestra visión</strong> está dirigida a consolidarnos en la Red líder de distribución de vinos
-                boutique de origen mendocino, a través de la presencia de representantes en diversos puntos del país
-                ofreciendo vinos fuera de serie, libres de códigos de barra y con sabores auténticos.</p>
-        </div>
-        <div class="grid-item grid-siete">
-            <video src="./multimedia/Videos/la-reddelvino.mp4" controls ></video> 
-        </div>
-        <div class="grid-item grid-ocho">
-            <p><strong>Nuestra misión</strong> para alcanzar este cometido, es brindar un producto que se destaca por
-                ser exclusivo, producido en series limitadas y bajo un cuidadoso proceso de selección y elaboración,
-                siempre procurando un servicio de calidad, a través de una venta simple y directa de la mano de nuestros
-                representantes regionales, haciendo énfasis en el consumo responsable.</p>
+        <!--Fila-->
+        <div class="row">
+            <!--Col 12-->
+            <!-- <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+                <video src="./multimedia/Videos/la-reddelvino.mp4" controls muted></video>
+            </div> -->
         </div>
     </section>
     <!--Fin Seccion Uno-->
-    <!--Fin Grilla-->
 
-    <!--Inicio Seccion Dos-->
-    <section class="section-dos" id="caracteristicas">
-        <div class="div-contenedor">
-                <h2 class="grid-titulo">Características del Producto</h2>
-            <h3 class="encabezado">
-                <u> El vino tiene la ventaja de ser un producto</u>:
-            </h3>
-            <ul class="lista">
-                <li>No Perecedero</li>
-                <li>De Consumo Masivo</li>
-                <li>No Contaminante</li>
-                <li>Fácil Traslado</li>
-                <li>Gran Prestigio</li>
-            </ul>
-            <h3 class="encabezado">
-                Permite no sólo tener ingresos económicos sino también, ingresos intangibles como las relaciones sociales que se generan en el día a día.
-            </h3>
+    <!--Seccion Dos-->
+    <div id="carouselExampleCaptions" class="carousel slide w-50 carrusel-imagenes " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
         </div>
-    </section>
-    <!--Fin seccion Dos-->
-
-    <!-- Inicio Footer -->
-    <footer>
-        <div class="footer-conteiner"> 
-            <div class="texto-footer">
-                <p><span>La Red del Vino</span> es una marca registrada, joven y comprometida con la generación de impacto
-                    positivo económico, social y ambiental. Valoramos el origen artesanal y la sustentabilidad de
-                    nuestros productos, los cuales buscan transmitir una experiencia lúdica descubriendo nuevos
-                    sabores que nos transportan a descubrir los rincones más recónditos de la región de Cuyo.</p>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagenes/imagenes/carrusel/fotohome5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>El Vino tiene la ventaja de ser un producto:
+                        <br>
+                        ¡No Perecedero!
+                    </h5>
+                </div>
             </div>
-            <!--Redes Sociales-->
-            <div class="redes-sociales"> 
-                <h3>Seguinos en las Redes</h3>
-                <div class="logos">
-                    <a href="https://www.facebook.com/La-red-del-vino-1167881183223551">
-                        <img src="imagenes/iconos/iconoface.png" alt="Icono de Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/la.red.del.vino/?hl=es-la">
-                        <img src="imagenes/iconos/iconoinsta.png" alt="Icono de Instagram">
+            <div class="carousel-item">
+                <img src="./imagenes/imagenes/carrusel/fotohome3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>De Consumo Masivo</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/imagenes/carrusel/fotohome4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>No Contaminante</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/imagenes/carrusel/fotohome.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fácil Traslado</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/imagenes/carrusel/fotohome6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gran Prestigio</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/imagenes/carrusel/fotohome2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Permite no sólo tener ingresos económicos sino también ingresos intangibles como las relaciones sociales que se generan en el día a día</h5>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Fin Footer -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--Fin Seccion Dos-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 

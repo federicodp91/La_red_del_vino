@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 
+
 /* Variables */
 :root {
     --fonts-titulos:'PT Serif', serif;
@@ -18,403 +19,72 @@
     --color-gris:#9a8c98;
     --color-azul:#649DE8;
 }
+/* Fin Variables */
 
 body {
-    background-color: #fff; 
+    background-color: white;
 }
-
-/* Animacion */
-
-.nav-animation:hover {
-    transform:scale(1.5);
-    transition: all 2s;
-    border-bottom: 
-    2px solid black;
-}
-
-video:hover {
-    transform: scale(1.5);
-    transition: all 2s;
-    border: 2px solid black;
-}
-
-
-/* Fin Animacion */
 
 
 /* Header */
-.header-contenedor {
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    background-image: url('./imagenes/imagenes/vino-dos.jpg');
+.contenedor-fluido {
+    padding-bottom: 35%;
+    background-image: url('./imagenes/imagenes//barril.jpg');
     background-size:cover;
     background-attachment: fixed;
-    padding-bottom: 35%;
-    margin-bottom: 1%;
-    width: 100%;
+
 }
-.header-contenedor .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-    list-style: none;
-}
-.header-contenedor .menu-contenedor .menu li{
-    margin: .5em 2.5em;
-}
-.menu li a {
-    text-decoration: none;
-    font-size: .9em;
+
+.barra-navegacion {
+    font-size: 1.1em;
     font-family: var(--fonts-textos);
     font-weight: bold;
-    color:black;
-    opacity: 0.6;
+    color: var(--color-gris);
+    opacity: .9;
+    text-decoration: none;
+    list-style: none;
 }
-.header-contenedor .contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+
+.barra-navegacion .nav-item .nav-link::after{
+    content: '|';
+    color: var(--color-violeta);
+    font-size: 1.3em;
 }
+
+.barra-navegacion .nav-item .nav-link:hover {
+    transform:scale(1.1);
+    transition: all 4s;
+}
+
 .contenedor .la-red {
     color: #a6668c;
     font-size: 3em;
     font-family: var(--fonts-titulos);
-    
+    margin-top: -2.2%;
 }
+
 .contenedor .titulo {
-    color:black;
-    opacity: 0.3;
-    font-size: 1.5em;
-    font-family: var(--fonts-titulos);
-    
-}
-/* Fin Header */
-
-/* Sección uno */
-/* Grilla */
-.grid-container {
-    margin: 8% 20%;
-    background-color: #fff;
-    display: grid;
-    grid-template-rows: 3.75em 12.75em 9.5em 13em 6.8em;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 0.93em;
-    grid-row-gap: 1.12em;
-    grid-template-areas: 
-    'tit1 tit1 tit1 tit2 tit2 tit2'
-    'lared lared lared promo promo promo'
-    'franquicias franquicias franquicias video video video'
-    'vision vision vision video video video'
-    'mision mision mision mision mision mision';
-}
-strong {
-    color: #a6668c;
-    font-size: 1.75em;
-}
-.grid-titulo {
-    font-size: 2.5em;
-    font-family: 'PT Serif', serif;
-    color: #a6668c;
-    text-align: center;
-}
-.grid-item {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
-    line-height: 1.4;
-    color: #5c5b5b;
-    margin: 0;
-}
-.grid-uno {
-    grid-area: tit1;
-}
-.grid-dos {
-    grid-area: tit2;
-}
-.grid-tres {
-    grid-area: lared;
-    
-}
-.grid-cuatro {
-    grid-area: promo;
-}
-.grid-cinco {
-    grid-area: franquicias;
-}
-.grid-seis {
-    grid-area: vision;
-}
-.grid-siete {
-    grid-area: video;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.grid-ocho {
-    grid-area: mision;
-}
-video {
-    width: 100%;
-    height: 86%;
-    border-radius: 20%;
-    border: 5px solid black;
-}
-/* Fin seccion Uno */
-/* Fin Grilla */
-
-/* Inicio Seccion dos */
-.section-dos{
-    display: flex;
-    justify-content: center;
-}
-.div-contenedor{
-    padding-bottom: 0;
-    margin: 4% 20%;
-}
-.imagen {
-    display: flex;
-    justify-content: center;
-}
-.encabezado {
-    margin-top: 2%;
     color:black;
     opacity: 0.6;
     font-size: 1.5em;
     font-family: var(--fonts-titulos);
-    display: flex;
-    justify-content: center;
+    margin-top: -.5%;
 }
-.lista {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.8em;
-    line-height: 1.4;
-    color: #5c5b5b;
-    padding: 10%;
-}
-.lista li {
-    list-style: none;
-}
-/* Fin Seccion dos */
+/* Fin Header */
 
+/* Seccion Uno */
 
-/* Inicio Footer */
-.footer-conteiner {
-    border-top: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-azul);
+#sec-uno {
+    margin-top: 2%;
+    margin-bottom: 10%;
+
 }
-.texto-footer{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 40%;
-    font-family: var(--fonts-textos);
-    color: black;
-    opacity: 0.8;
-    padding: 0;
-    font-size: 1em;
-}
-span{
-    color: var(--color-violeta);
-    font-weight: bold;
-}
-.redes-sociales a{
-    text-decoration: none;
-}
-.redes-sociales {
-    margin-left: 8%;
-    padding: 0;
+
+.titulo {
     color: var(--color-violeta);
 }
-.logos {
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-around;
+
+/* Fin Seccion Uno */
+.carrusel-imagenes {
+    margin: auto auto;
 }
-/* Fin Footer */
-
-/* Media Queries*/
-/* Medias Mobyle */
-@media only screen and (max-width: 480px) {
-    .header-contenedor {
-        padding-bottom: 0;
-        background-attachment: inherit;
-    }
-    .menu {
-        flex-direction: column;
-    }
-    .menu li {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-    .menu li a {
-        background-color: white;
-    }
-    .contenedor .la-red{
-        font-size: 2em;
-    }
-    .contenedor .titulo{
-        display: none;
-    }
-    video {
-        height: 60%;
-    }
-    .grid-container {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 3.75em 8.75em 7.5em 10em 3.75em 8.75em 7.5em 10em 6.8em;
-        gap: 1.12em 0.93em;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "tit1 tit1 tit1"
-        "lared lared lared"
-        "franquicias franquicias franquicias"
-        "vision vision vision"
-        "tit2 tit2 tit2"
-        "promo promo promo"
-        "video video video"
-        "video video video"
-        "mision mision mision";
-    }
-    .grid-uno { grid-area: tit1; }
-    .grid-tres { grid-area: lared; }
-    .grid-cinco {grid-area: franquicias; }
-    .grid-seis {grid-area: vision;}
-    .grid-dos {grid-area: tit2;}
-    .grid-cuatro {grid-area: promo;}
-    .grid-siete {grid-area: video;}
-    .grid-ocho {grid-area: mision;}
-    .grid-item {
-        font-family: 'Open Sans', sans-serif;
-        font-size: .6em;
-        color: #5c5b5b;
-        margin: 0;
-    }
-    .texto-footer{
-        display: none;
-    }
-    }
-    /* Fin Medias Mobyle */
-
-/* Medias Tablet */
-@media only screen and (min-width: 481px) and (max-width: 968px) {
-    .header-contenedor{
-        padding-bottom: 0;
-        background-attachment:contain;
-    }
-    .menu{
-        flex-direction: column;
-    }
-    .menu li {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-    .menu li a {
-        background-color: white;
-    }
-    .grid-container {  
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 3.75em 8.75em 7.5em 10em 3.75em 8.75em 7.5em 10em 6.8em;
-        gap: 1.12em 0.93em;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "tit1 tit1 tit1"
-        "lared lared lared"
-        "franquicias franquicias franquicias"
-        "vision vision vision"
-        "tit2 tit2 tit2"
-        "promo promo promo"
-        "video video video"
-        "video video video"
-        "mision mision mision";
-    }
-    .grid-uno { grid-area: tit1; }
-    .grid-tres { grid-area: lared; }
-    .grid-cinco {grid-area: franquicias; }
-    .grid-seis {grid-area: vision;}
-    .grid-dos {grid-area: tit2;}
-    .grid-cuatro {grid-area: promo;}
-    .grid-siete {grid-area: video;}
-    .grid-ocho {grid-area: mision;}
-    .grid-item {
-        font-family: 'Open Sans', sans-serif;
-        font-size: .9em;
-        color: #5c5b5b;
-        margin: 0;
-    }
-    video {
-        height: 100%;
-    }
-    .div-contenedor{
-        padding-bottom: 0;
-        margin: 0 5%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .lista {
-        padding: 3%;
-    }
-    .footer-conteiner {
-        flex-direction: column;
-    }
-    .texto-footer {
-        width: 100%;
-    }
-    .redes-sociales {
-        margin-left: 0;
-    }
-}
-/* Fin Medias Tablet */
-
-/* Medias Desktop 1 */
-@media only screen and (min-width: 969px) and (max-width:1024px) {
-    .grid-container { 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 3.75em 8.75em 7.5em 10em 3.75em 8.75em 7.5em 10em 6.8em;
-        gap: 1.12em 0.93em;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "tit1 tit1 tit1"
-            "lared lared lared"
-            "franquicias franquicias franquicias"
-            "vision vision vision"
-            "tit2 tit2 tit2"
-            "promo promo promo"
-            "video video video"
-            "video video video"
-            "mision mision mision";
-    }
-    .grid-uno { grid-area: tit1; }
-    .grid-tres { grid-area: lared; }
-    .grid-cinco {grid-area: franquicias; }
-    .grid-seis {grid-area: vision;}
-    .grid-dos {grid-area: tit2;}
-    .grid-cuatro {grid-area: promo;}
-    .grid-siete {grid-area: video;}
-    .grid-ocho {grid-area: mision;}
-    .grid-item {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.1em;
-        color: #5c5b5b;
-        margin: 0;
-    }
-    video {
-        height: 112%;
-    }
-    .grid-ocho {
-        padding-top: 1em;
-    }
-}
-/* Fin Medias Desktop */
-
-
