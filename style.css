@@ -78,7 +78,6 @@ body {
 #sec-uno {
     margin-top: 4%;
     margin-bottom: 4%;
-
 }
 
 .titulo {
@@ -86,6 +85,8 @@ body {
 }
 
 /* Fin Seccion Uno */
+
+
 
 /* Seccion Dos */
 
@@ -103,6 +104,17 @@ body {
 /* Fin Seccion Dos */
 
 /* Seccion Tres */
+.lista-requisitos {
+    list-style: none;
+    
+}
+
+.lista-requisitos li::before{
+    content:'*';
+    color: var(--color-violeta);
+    font-size: 1.3em;
+}
+
 
 /* Fin Seccion Tres */
 
