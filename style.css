@@ -107,14 +107,43 @@ body {
 @media only screen and (max-width: 480px) {
     .carrusel-imagenes {
         display: none;
-        
+    }
+
+    .contenedor .contenedor-titulo {
+        display: none;
+    }
+
+    .contenedor .contenedor-subtitulo {
+        display: none;
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 968px) {
+@media only screen and (max-width: 991px) {
 
+    .barra-navegacion {
+    }
+
+
+    .barra-navegacion .nav-item a {
+        justify-content: center;
+        display: inline-block;
+        background-color: whitesmoke;
+        opacity: 0.8;
+        margin-bottom: 1em;
+
+    }
+
+
+    .barra-navegacion .nav-item .nav-link::after{
+        display: none;
+    }
+
+    .contenedor .titulo {
+        display:inline;
+        background-color: whitesmoke;
+        opacity: 0.8;
+    }
 }
-
 /* Fin Medias Queries */
 
 
