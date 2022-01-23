@@ -22,7 +22,7 @@
 /* Fin Variables */
 
 body {
-    background-color: white;
+    background-color:#BEC5AD;
 }
 
 
@@ -74,6 +74,7 @@ body {
 
 /* Seccion Uno */
 
+
 #sec-uno {
     margin-top: 2%;
     margin-bottom: 10%;
@@ -85,6 +86,35 @@ body {
 }
 
 /* Fin Seccion Uno */
-.carrusel-imagenes {
-    margin: auto auto;
+
+/* Seccion Dos */
+
+#sec-dos {
+    margin-bottom: 10%;
 }
+
+.titulo-dos {
+    color:black;
+    opacity: 0.6;
+    font-size: 1.5em;
+    font-family: var(--fonts-titulos);
+}
+
+
+/* Fin Seccion Dos */
+
+
+@media only screen and (max-width: 480px) {
+    .carrusel-imagenes {
+        display: none;
+        
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+
+}
+
+/* Fin Medias Queries */
+
+
