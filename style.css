@@ -22,13 +22,10 @@
 /* Fin Variables */
 
 body {
-    background: #8e9eab;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-
+    background: #8e9eab; 
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  
+    background: linear-gradient(to right, #eef2f3, #8e9eab);  
 }
-
 
 /* Header */
 .contenedor-fluido {
@@ -37,12 +34,6 @@ body {
     background-size:cover;
     background-attachment: fixed;
 }
-
-.contenedor-fluido2 {
-
-}
-
-
 .barra-navegacion {
     font-size: 1.1em;
     font-family: var(--fonts-textos);
@@ -57,9 +48,6 @@ body {
     color: var(--color-violeta);
     font-size: 1.3em;
 }
-
-
-
 .barra-navegacion .nav-item .nav-link:hover {
     transition: 1.7s;
     transform: scale(1.1);
@@ -93,7 +81,6 @@ body {
 
 
 /* Contacto */
-
 form {
     width: 28em;
     margin: auto;
@@ -103,7 +90,6 @@ form {
     border-radius: 0.75em;
     font-family: var(--fonts-titulos);
 }
-
 .contacto {
     color: #fff;
     text-align: center;
@@ -112,7 +98,6 @@ form {
     margin-bottom: .7em;
     font-family: var(--fonts-textos);
 }
-
 input , textarea {
     width: 100%;
     margin-bottom: 1.25em;
@@ -120,21 +105,16 @@ input , textarea {
     font-size: 1em;
     border: none;
 }
-
 textarea {
     min-height: 6.25em;
     max-height: 18.75em;
 }
-
 #boton-contacto {
     background: #31384a;
     color: #fff;
     padding: 1.25em;
-
 }
-
 /* Fin Contacto */
-
 
 
 /* Seccion Dos */
@@ -150,7 +130,6 @@ textarea {
 /* Fin Seccion Dos */
 
 /* Seccion Tres */
-
 #sec-3 {
     margin-bottom: 5% ;
 }
@@ -175,7 +154,6 @@ textarea {
     right: 30px;
     z-index: 100;
 }
-
 .btn-wsp:hover{
     transform:scale(1.1);
     transition: all .2s;
