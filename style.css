@@ -22,7 +22,11 @@
 /* Fin Variables */
 
 body {
-    background-color:#BEC5AD;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 }
 
 
@@ -32,9 +36,7 @@ body {
     background-image: url('./imagenes/imagenes//barril.jpg');
     background-size:cover;
     background-attachment: fixed;
-
 }
-
 .barra-navegacion {
     font-size: 1.1em;
     font-family: var(--fonts-textos);
@@ -44,25 +46,22 @@ body {
     text-decoration: none;
     list-style: none;
 }
-
 .barra-navegacion .nav-item .nav-link::after{
     content: '|';
     color: var(--color-violeta);
     font-size: 1.3em;
 }
-
 .barra-navegacion .nav-item .nav-link:hover {
-    transform:scale(1.1);
-    transition: all 4s;
+    transition: 1.7s;
+    transform: scale(1.1);
+    text-shadow: 0 0 1em var(--color-violeta);
 }
-
 .contenedor .la-red {
     color: #a6668c;
     font-size: 3em;
     font-family: var(--fonts-titulos);
     margin-top: -2.2%;
 }
-
 .contenedor .titulo {
     color:black;
     opacity: 0.6;
@@ -73,34 +72,25 @@ body {
 /* Fin Header */
 
 /* Seccion Uno */
-
-
 #sec-uno {
     margin-top: 4%;
     margin-bottom: 4%;
 }
-
 .titulo {
     color: var(--color-violeta);
 }
-
 /* Fin Seccion Uno */
 
-
-
 /* Seccion Dos */
-
 #sec-dos {
     margin-bottom: 10%;
 }
-
 .titulo-dos {
     color:black;
     opacity: 0.6;
     font-size: 1.5em;
     font-family: var(--fonts-titulos);
 }
-
 /* Fin Seccion Dos */
 
 /* Seccion Tres */
@@ -108,54 +98,52 @@ body {
     list-style: none;
     
 }
-
 .lista-requisitos li::before{
     content:'*';
     color: var(--color-violeta);
     font-size: 1.3em;
 }
-
-
 /* Fin Seccion Tres */
 
-/*  Medias Queries */
+/* Boton Whatsapp */
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+}
+/* Fin Boton Whatsapp */
 
 /*  Medias Queries */
-
 @media only screen and (max-width: 480px) {
     .carrusel-imagenes {
         display: none;
     }
-
     .contenedor .contenedor-titulo {
         display: none;
     }
-
     .contenedor .contenedor-subtitulo {
         display: none;
     }
+    .btn-wsp {
+        display: none;
+    }
 }
-
 @media only screen and (max-width: 991px) {
-
     .barra-navegacion {
     }
-
-
     .barra-navegacion .nav-item a {
         justify-content: center;
         display: inline-block;
         background-color: whitesmoke;
         opacity: 0.8;
         margin-bottom: 1em;
-
     }
-
-
     .barra-navegacion .nav-item .nav-link::after{
         display: none;
     }
-
     .contenedor .titulo {
         display:inline;
         background-color: whitesmoke;
