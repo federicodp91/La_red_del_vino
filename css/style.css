@@ -1,0 +1,200 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* Fin fuentes */
+
+/* Reset CSS */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* Variables */
+:root {
+    --fonts-titulos:'PT Serif', serif;
+    --fonts-textos: 'Open Sans', sans-serif;
+    --color-violeta: #a6668c;
+    --color-gris:#9a8c98;
+    --color-azul:#649DE8;
+}
+/* Fin Variables */
+
+body {
+    background: #8e9eab; 
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  
+    background: linear-gradient(to right, #eef2f3, #8e9eab);  
+}
+
+/* Header */
+.contenedor-fluido {
+    padding-bottom: 35%;
+    background-image: url('../src/multimedia/imagenes/imagenes/barril.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+}
+.barra-navegacion {
+    font-size: 1.1em;
+    font-family: var(--fonts-textos);
+    font-weight: bold;
+    color: var(--color-gris);
+    opacity: .9;
+    text-decoration: none;
+    list-style: none;
+}
+.barra-navegacion .nav-item .nav-link::after{
+    content: '|';
+    color: var(--color-violeta);
+    font-size: 1.3em;
+}
+.barra-navegacion .nav-item .nav-link:hover {
+    transition: 1.7s;
+    transform: scale(1.1);
+    text-shadow: 0 0 1em var(--color-violeta);
+}
+.contenedor .la-red {
+    color: #a6668c;
+    font-size: 3em;
+    font-family: var(--fonts-titulos);
+    margin-top: -2.2%;
+}
+.contenedor .titulo {
+    color:black;
+    opacity: 0.6;
+    font-size: 1.5em;
+    font-family: var(--fonts-titulos);
+    margin-top: -.5%;
+}
+
+/* Fin Header */
+
+/* Seccion Uno */
+#sec-uno {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.titulo {
+    color: var(--color-violeta);
+}
+/* Fin Seccion Uno */
+
+
+/* Contacto */
+form {
+    width: 28em;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.6em 1.25em;
+    margin-top: 1.25em;
+    border-radius: 0.75em;
+    font-family: var(--fonts-titulos);
+}
+.contacto {
+    color: #fff;
+    text-align: center;
+    margin:0;
+    font-size: 2.4em;
+    margin-bottom: .7em;
+    font-family: var(--fonts-textos);
+}
+input , textarea {
+    width: 100%;
+    margin-bottom: 1.25em;
+    padding: 0.4em;
+    font-size: 1em;
+    border: none;
+}
+textarea {
+    min-height: 6.25em;
+    max-height: 18.75em;
+}
+#boton-contacto {
+    background: #31384a;
+    color: #fff;
+    padding: 1.25em;
+}
+/* Fin Contacto */
+
+
+/* Seccion Dos */
+#sec-dos {
+    margin-bottom: 10%;
+}
+.titulo-dos {
+    color:black;
+    opacity: 0.6;
+    font-size: 1.5em;
+    font-family: var(--fonts-titulos);
+}
+/* Fin Seccion Dos */
+
+/* Seccion Tres */
+#sec-3 {
+    margin-bottom: 5% ;
+}
+.lista-requisitos {
+    list-style: none;
+    
+}
+.lista-requisitos li::before{
+    content:'*';
+    color: var(--color-violeta);
+    font-size: 1.3em;
+}
+/* Fin Seccion Tres */
+
+/* Boton Whatsapp */
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+.btn-wsp:hover{
+    transform:scale(1.1);
+    transition: all .2s;
+}
+/* Fin Boton Whatsapp */
+
+/*  Medias Queries */
+@media only screen and (max-width: 480px) {
+    .carrusel-imagenes {
+        display: none;
+    }
+    .contenedor .contenedor-titulo {
+        display: none;
+    }
+    .contenedor .contenedor-subtitulo {
+        display: none;
+    }
+    .btn-wsp {
+        display: none;
+    }
+    form{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .barra-navegacion .nav-item a {
+        justify-content: center;
+        display: inline-block;
+        background-color: whitesmoke;
+        opacity: 0.8;
+        margin-bottom: 1em;
+    }
+    .barra-navegacion .nav-item .nav-link::after{
+        display: none;
+    }
+    .contenedor .titulo {
+        display:inline;
+        background-color: whitesmoke;
+        opacity: 0.8;
+    }
+}
+/* Fin Medias Queries */
+
+
