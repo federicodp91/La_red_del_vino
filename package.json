@@ -1,0 +1,23 @@
+{
+  "name": "la-red-del-vino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/federicodp91/La_red_del_vino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/federicodp91/La_red_del_vino/issues"
+  },
+  "homepage": "https://github.com/federicodp91/La_red_del_vino#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
