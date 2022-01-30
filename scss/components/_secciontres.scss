@@ -1,0 +1,25 @@
+/*Seccion tres*/
+.seccion-tres{
+    margin-bottom: 5% ;
+    .card{
+        .card-body{
+            .titulo-dos{
+                color:black;
+                opacity: 0.6;
+                font-size: 1.5em;
+                font-family: $fonts-titulos;
+            }
+            .lista-requisitos{
+                list-style: none;
+                li{
+                    &::before {
+                        content:'*';
+                        color: $color-violeta;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Fin Seccion tres*/

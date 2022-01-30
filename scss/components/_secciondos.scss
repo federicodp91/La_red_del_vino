@@ -1,0 +1,21 @@
+/*Seccion dos*/
+.container-dos{
+    margin-bottom: 10%;
+    .titulo{
+        color: $color-violeta;
+    }
+    .titulo-dos{
+        color:black;
+        opacity: 0.6;
+        font-size: 1.5em;
+        font-family: $fonts-titulos;
+    }
+
+    .carrusel-imagenes {
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+    }
+
+}
+/*Fin seccion dos*/

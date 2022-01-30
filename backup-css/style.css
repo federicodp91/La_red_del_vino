@@ -1,34 +1,34 @@
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); */
 /* Fin fuentes */
 
 /* Reset CSS */
-* {
+/* * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-}
+} */
 
 
 /* Variables */
-:root {
+/* :root {
     --fonts-titulos:'PT Serif', serif;
     --fonts-textos: 'Open Sans', sans-serif;
     --color-violeta: #a6668c;
     --color-gris:#9a8c98;
     --color-azul:#649DE8;
-}
+} */
 /* Fin Variables */
 
-body {
+/* body {
     background: #8e9eab; 
     background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  
     background: linear-gradient(to right, #eef2f3, #8e9eab);  
-}
+} */
 
 /* Header */
-.contenedor-fluido {
+/* .contenedor-fluido {
     padding-bottom: 35%;
     background-image: url('./imagenes/imagenes//barril.jpg');
     background-size:cover;
@@ -42,8 +42,8 @@ body {
     opacity: .9;
     text-decoration: none;
     list-style: none;
-}
-.barra-navegacion .nav-item .nav-link::after{
+} */
+/* .barra-navegacion .nav-item .nav-link::after{
     content: '|';
     color: var(--color-violeta);
     font-size: 1.3em;
@@ -52,8 +52,8 @@ body {
     transition: 1.7s;
     transform: scale(1.1);
     text-shadow: 0 0 1em var(--color-violeta);
-}
-.contenedor .la-red {
+} */
+/* .contenedor .la-red {
     color: #a6668c;
     font-size: 3em;
     font-family: var(--fonts-titulos);
@@ -65,23 +65,23 @@ body {
     font-size: 1.5em;
     font-family: var(--fonts-titulos);
     margin-top: -.5%;
-}
+} */
 
 /* Fin Header */
 
 /* Seccion Uno */
-#sec-uno {
+/* #sec-uno {
     margin-top: 4%;
     margin-bottom: 4%;
 }
 .titulo {
     color: var(--color-violeta);
-}
+} */
 /* Fin Seccion Uno */
 
 
 /* Contacto */
-form {
+/* form {
     width: 28em;
     margin: auto;
     background: rgba(0, 0, 0, 0.4);
@@ -113,12 +113,12 @@ textarea {
     background: #31384a;
     color: #fff;
     padding: 1.25em;
-}
+} */
 /* Fin Contacto */
 
 
 /* Seccion Dos */
-#sec-dos {
+/* #sec-dos {
     margin-bottom: 10%;
 }
 .titulo-dos {
@@ -126,11 +126,11 @@ textarea {
     opacity: 0.6;
     font-size: 1.5em;
     font-family: var(--fonts-titulos);
-}
+} */
 /* Fin Seccion Dos */
 
 /* Seccion Tres */
-#sec-3 {
+/* #sec-3 {
     margin-bottom: 5% ;
 }
 .lista-requisitos {
@@ -141,11 +141,11 @@ textarea {
     content:'*';
     color: var(--color-violeta);
     font-size: 1.3em;
-}
+} */
 /* Fin Seccion Tres */
 
 /* Boton Whatsapp */
-.btn-wsp {
+/* .btn-wsp {
     position: fixed;
     width: 55px;
     height: 55px;
@@ -157,11 +157,11 @@ textarea {
 .btn-wsp:hover{
     transform:scale(1.1);
     transition: all .2s;
-}
+} */
 /* Fin Boton Whatsapp */
 
 /*  Medias Queries */
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
     .carrusel-imagenes {
         display: none;
     }
@@ -194,7 +194,7 @@ textarea {
         background-color: whitesmoke;
         opacity: 0.8;
     }
-}
+} */
 /* Fin Medias Queries */
 
 
