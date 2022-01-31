@@ -139,7 +139,28 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   transition: all 0.2s;
 }
 
+.btn-home {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  left: 30px;
+  z-index: 100;
+}
+@media screen and (max-width: 480px) {
+  .btn-home {
+    display: none;
+  }
+}
+.btn-home:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
 /*Fin Boton Whasapp*/
+/*Boton Home*/
+/*Fin Boton Home*/
 /*Header contacto*/
 body {
   margin: 0%;
@@ -269,6 +290,25 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
   }
 }
 .btn-wsp:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
+.btn-home {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  left: 30px;
+  z-index: 100;
+}
+@media screen and (max-width: 480px) {
+  .btn-home {
+    display: none;
+  }
+}
+.btn-home:hover {
   transform: scale(1.1);
   transition: all 0.2s;
 }

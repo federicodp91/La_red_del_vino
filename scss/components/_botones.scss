@@ -1,6 +1,12 @@
 /*Boton Whasapp*/
 @import '../base/extends';
 .btn-wsp{
-    @extend %botones-flotantes;
+    @extend %boton-wpp;
 }
 /*Fin Boton Whasapp*/
+
+/*Boton Home*/
+.btn-home {
+   @extend %boton-home;
+}
+/*Fin Boton Home*/
