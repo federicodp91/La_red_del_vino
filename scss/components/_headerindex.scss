@@ -31,7 +31,7 @@ body {
                         &:hover {
                             transition: 1.7s;
                             transform: scale(1.1);
-                            text-shadow: 0 0 1em $color-violeta
+                            text-shadow: 0 0 1em $color-violeta;
                         }
                         @media screen and (max-width: 991px) {
                             justify-content: center;
