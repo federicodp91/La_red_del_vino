@@ -254,5 +254,23 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
 }
 
 /* Fin Contacto*/
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+}
+@media screen and (max-width: 480px) {
+  .btn-wsp {
+    display: none;
+  }
+}
+.btn-wsp:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
 
 /*# sourceMappingURL=style.css.map */

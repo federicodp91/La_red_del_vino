@@ -1,19 +1,6 @@
 /*Boton Whasapp*/
+@import '../base/extends';
 .btn-wsp{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
-    @media screen and (max-width: 480px) {
-        display: none;
-    }
-
-    &:hover {
-        transform:scale(1.1);
-        transition: all .2s;
-    }
+    @extend %botones-flotantes;
 }
 /*Fin Boton Whasapp*/
