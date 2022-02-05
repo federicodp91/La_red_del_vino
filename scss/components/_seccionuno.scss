@@ -1,9 +1,8 @@
 /*Seccion Uno*/
 .seccion-uno{
-    background-color: #F1FAFF;;
     .container-card{
         max-width: 1200px;
-        margin: auto;
+        margin: 6em auto 8em auto;
         perspective: 1000px;
         display: flex;
         justify-content: center;
@@ -22,6 +21,7 @@
                 position: relative;
                 transform-style: preserve-3d;
                 transition: all 600ms;
+                border-radius: 20px;
                 .card-front{
                     background-image: url('../../src/multimedia/imagenes/imagenes/fotohome.jpg');
                     background-size: cover;
@@ -80,7 +80,6 @@
                             padding: 10px 40px;
                             margin-top: 30px;
                             font-size: 16px;
-                            cursor: pointer;
                             border: none;
                             color: white;
                             background: $color-violeta;
@@ -238,7 +237,11 @@
             }
         }
     }
+    .mision{
+        border: 2px solid black;
+    }
 }
+
 
 
 

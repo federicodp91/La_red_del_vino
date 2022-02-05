@@ -70,12 +70,9 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 
 /*Fin Header*/
 /*Seccion Uno*/
-.seccion-uno {
-  background-color: #F1FAFF;
-}
 .seccion-uno .container-card {
   max-width: 1200px;
-  margin: auto;
+  margin: 6em auto 8em auto;
   perspective: 1000px;
   display: flex;
   justify-content: center;
@@ -94,6 +91,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   position: relative;
   transform-style: preserve-3d;
   transition: all 600ms;
+  border-radius: 20px;
 }
 .seccion-uno .container-card .card-father .card .card-front {
   background-image: url("../../src/multimedia/imagenes/imagenes/fotohome.jpg");
@@ -155,7 +153,6 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   padding: 10px 40px;
   margin-top: 30px;
   font-size: 16px;
-  cursor: pointer;
   border: none;
   color: white;
   background: #a6668c;
@@ -308,6 +305,9 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input:hover {
   box-shadow: 1px 1px 30px 0px #a6668c;
 }
+.seccion-uno .mision {
+  border: 2px solid black;
+}
 
 /*Fin seccio Uno*/
 /*Seccion dos*/
@@ -366,24 +366,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   }
 }
 
-.btn-home {
-  position: fixed;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  left: 30px;
-  z-index: 100;
-}
-@media screen and (max-width: 480px) {
-  .btn-home {
-    display: none;
-  }
-}
-
 /*Fin Boton Whasapp*/
-/*Boton Home*/
-/*Fin Boton Home*/
 /*Header contacto*/
 body {
   margin: 0%;
@@ -509,21 +492,6 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
 }
 @media screen and (max-width: 480px) {
   .btn-wsp {
-    display: none;
-  }
-}
-
-.btn-home {
-  position: fixed;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  left: 30px;
-  z-index: 100;
-}
-@media screen and (max-width: 480px) {
-  .btn-home {
     display: none;
   }
 }
