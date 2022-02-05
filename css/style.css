@@ -83,7 +83,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   perspective: 1000px;
 }
 .seccion-uno .container-card .card-father:hover .card {
-  transform: rotateY(150deg);
+  transform: rotateY(180deg);
 }
 .seccion-uno .container-card .card-father .card {
   width: 350px;
@@ -304,6 +304,9 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input:hover {
   box-shadow: 1px 1px 30px 0px #a6668c;
+}
+.seccion-uno .mision {
+  border: 2px solid black;
 }
 
 /*Fin seccio Uno*/

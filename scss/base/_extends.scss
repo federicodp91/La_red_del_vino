@@ -9,10 +9,6 @@
     @media screen and (max-width: 480px) {
         display: none;
     }
-    &:hover {
-        transform:scale(1.1);
-        transition: all .2s;
-    }
 }
 
 %boton-home{
@@ -25,9 +21,5 @@
     z-index: 100;
     @media screen and (max-width: 480px) {
         display: none;
-    }
-    &:hover {
-        transform:scale(1.1);
-        transition: all .2s;
     }
 }
