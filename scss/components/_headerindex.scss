@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/mapas';
 /*Header*/
 body {
     margin: 0%;
@@ -49,18 +50,18 @@ body {
             .contenedor{
                 .contenedor-titulo{
                     .la-red{
-                        color: #a6668c;
-                        font-size: 3em;
-                        font-family: $fonts-titulos;
+                        color: map-get($titulo-standar, color );
+                        font-size: map-get($titulo-standar, size);
+                        font-family: map-get($titulo-standar, family);
                         margin-top: -2.2%;
                     }
                 }
                 .contenedor-subtitulo{
                     .titulo{
-                        color:black;
-                        opacity: 0.6;
-                        font-size: 1.5em;
-                        font-family: $fonts-titulos;
+                        color:map-get($subtitulo-standar, color);
+                        opacity: map-get($subtitulo-standar, opacity);
+                        font-size: map-get($subtitulo-standar, size);
+                        font-family:map-get($subtitulo-standar, family);
                         margin-top: -.5%;
                         @media screen and (max-width: 991px) {
                             display:inline;

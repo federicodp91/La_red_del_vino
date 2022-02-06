@@ -11,15 +11,7 @@
     }
 }
 
-%boton-home{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    left: 30px;
-    z-index: 100;
-    @media screen and (max-width: 480px) {
-        display: none;
-    }
+%flex{
+    display: flex;
+    justify-content: center;
 }
