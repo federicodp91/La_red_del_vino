@@ -1,39 +1,41 @@
+@import '../base/mixin';
+@import '../base/extends';
+@import '../base/variables';
 /*Seccion Uno*/
 .seccion-uno{
     .container-card{
-        max-width: 1200px;
-        margin: 6em auto 8em auto;
-        perspective: 1000px;
-        display: flex;
-        justify-content: center;
+        max-width: 75em;
+        margin: auto auto;
+        perspective: 62.5em;
+        @extend %flex;
         flex-wrap: wrap;
         .card-father{
-            margin: 20px;
-            perspective: 1000px;
+            margin: 1.25em;
+            perspective: 62.5em;
             &:hover{
                 .card{
                     transform: rotateY(180deg);
                 }
             }
             .card{
-                width: 350px;
-                height: 400px;
-                position: relative;
+                width: 21.8em;
+                height: 25em;
+                @include card-positon(relative);
                 transform-style: preserve-3d;
                 transition: all 600ms;
-                border-radius: 20px;
+                border-radius: 1.25em;
                 .card-front{
                     background-image: url('../../src/multimedia/imagenes/imagenes/fotohome.jpg');
                     background-size: cover;
                     background-position: center;
                     width: 100%;
                     height: 100%;
-                    position: absolute;
+                    @include card-positon(absolute);
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
                     transform-style: preserve-3d;
-                    border-radius: 20px;
+                    border-radius: 1.25em;
                     .bg{
                         width: 100%;
                         height: 100%;
@@ -41,18 +43,20 @@
                         top: 0;
                         left: 0;
                         background: rgba(0,0,0,0.4);
-                        border-radius: 20px;
+                        border-radius: 1.25em;
                     }
                     .body-card-front{
                         width: 100%;
                         height: 100%;
                         text-align: center;
-                        padding: 40px;
-                        display: flex;
-                        justify-content: center;
+                        padding: 2.5em;
+                        @extend %flex;
                         align-items: center;
                         color: #fff;
                         transform: translateZ(60px);
+                        h2{
+                            font-size: 1.6em;
+                        }
                     }
                 }
                 .card-back {
@@ -60,34 +64,34 @@
                     background-position: center;
                     width: 100%;
                     height: 100%;
-                    position: absolute;
+                    @include card-positon(absolute);
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
                     transform-style: preserve-3d;
-                    border-radius: 20px;
+                    border-radius: 1.25em;
                     transform: rotateY(180deg);
                     background: white;
                     .body-card-back{
-                        padding: 40px;
+                        padding: 2.5em;
                         text-align: center;
                         transform: translateZ(60px);
-                        p{
-                            margin-top: 30px;
-                            font-size: 18px;
+                        .text-card{
+                            margin-top: 1.8em;
+                            font-size: 1.1em;
                         }
                         input{
-                            padding: 10px 40px;
-                            margin-top: 30px;
-                            font-size: 16px;
+                            padding: 0.6em 2.5em;
+                            margin-top: 1.8em;
+                            font-size: 1em;
                             border: none;
                             color: white;
                             background: $color-violeta;
                             box-shadow: 1px 1px 30px -5px $color-violeta;
-                            border-radius: 10px;
+                            border-radius: 0.6em;
                             transition: box-shadow 600ms;
                             &:hover{
-                                box-shadow: 1px 1px 30px 0px $color-violeta
+                                box-shadow: 1px 1px 30px 0px $color-violeta;
                             }
                         }
                     }
@@ -98,12 +102,12 @@
                     background-position: center;
                     width: 100%;
                     height: 100%;
-                    position: absolute;
+                    @include card-positon(absolute);
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
                     transform-style: preserve-3d;
-                    border-radius: 20px;
+                    border-radius: 1.25em;
                     .bg{
                         width: 100%;
                         height: 100%;
@@ -111,18 +115,20 @@
                         top: 0;
                         left: 0;
                         background: rgba(0,0,0,0.4);
-                        border-radius: 20px;
+                        border-radius: 1.25em;
                     }
                     .body-card-front{
                         width: 100%;
                         height: 100%;
                         text-align: center;
-                        padding: 40px;
-                        display: flex;
-                        justify-content: center;
+                        padding: 2.5em;
+                        @extend %flex;
                         align-items: center;
                         color: #fff;
                         transform: translateZ(60px);
+                        h2{
+                            font-size: 1.6em;
+                        }
                     }
                 }
                 .card-back {
@@ -130,32 +136,32 @@
                     background-position: center;
                     width: 100%;
                     height: 100%;
-                    position: absolute;
+                    @include card-positon(absolute);
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
                     transform-style: preserve-3d;
-                    border-radius: 20px;
+                    border-radius: 1.25em;
                     transform: rotateY(180deg);
                     background: white;
                     .body-card-back{
-                        padding: 40px;
+                        padding: 2.5em;
                         text-align: center;
                         transform: translateZ(60px);
-                        p{
-                            margin-top: 30px;
-                            font-size: 18px;
+                        .text-card{
+                            margin-top: 1.8em;
+                            font-size: 1.1em;
                         }
                         input{
-                            padding: 10px 40px;
-                            margin-top: 30px;
-                            font-size: 16px;
+                            padding: 0.6em 2.5em;
+                            margin-top: 1.8em;
+                            font-size: 1em;
                             cursor: pointer;
                             border: none;
                             color: white;
                             background: $color-violeta;
                             box-shadow: 1px 1px 30px -5px $color-violeta;
-                            border-radius: 10px;
+                            border-radius: 0.6em;
                             transition: box-shadow 600ms;
                             &:hover{
                                 box-shadow: 1px 1px 30px 0px $color-violeta
@@ -169,12 +175,12 @@
                     background-position: center;
                     width: 100%;
                     height: 100%;
-                    position: absolute;
+                    @include card-positon(absolute);
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
                     transform-style: preserve-3d;
-                    border-radius: 20px;  
+                    border-radius: 1.25em;  
                     .bg{
                         width: 100%;
                         height: 100%;
@@ -182,18 +188,20 @@
                         top: 0;
                         left: 0;
                         background: rgba(0,0,0,0.4);
-                        border-radius: 20px;
+                        border-radius: 1.25em;
                     }
                     .body-card-front{
                         width: 100%;
                         height: 100%;
                         text-align: center;
-                        padding: 40px;
-                        display: flex;
-                        justify-content: center;
+                        padding: 2.5em;
+                        @extend %flex;
                         align-items: center;
                         color: #fff;
                         transform: translateZ(60px);
+                        h2{
+                            font-size: 1.6em;
+                        }
                     }              
                 }
                 .card-back {
@@ -201,7 +209,7 @@
                     background-position: center;
                     width: 100%;
                     height: 100%;
-                    position: absolute;
+                    @include card-positon(absolute);
                     top: 0;
                     left: 0;
                     backface-visibility: hidden;
@@ -210,23 +218,23 @@
                     transform: rotateY(180deg);
                     background: white;
                     .body-card-back{
-                        padding: 40px;
+                        padding: 1.25em;
                         text-align: center;
                         transform: translateZ(60px);
-                        p{
-                            margin-top: 30px;
-                            font-size: 18px;
+                        .text-card{
+                            margin-top: 1em;
+                            font-size: 1.3em;
                         }
                         input{
-                            padding: 10px 40px;
-                            margin-top: 30px;
-                            font-size: 16px;
+                            padding: 0.6em 2.5em;
+                            margin-top: 1.8em;
+                            font-size: 1em;
                             cursor: pointer;
                             border: none;
                             color: white;
                             background: $color-violeta;
                             box-shadow: 1px 1px 30px -5px $color-violeta;
-                            border-radius: 10px;
+                            border-radius: 0.6em;
                             transition: box-shadow 600ms;
                             &:hover{
                                 box-shadow: 1px 1px 30px 0px $color-violeta
@@ -237,10 +245,20 @@
             }
         }
     }
-    .mision{
-        border: 2px solid black;
+    .row{
+        margin: 2em 3em;
+        .titulo{
+            color: $color-violeta;
+            font-family: $fonts-titulos;
+        }
+        p{
+            font-size: 1.3em;
+            color: black;
+            opacity: 0.9;
+        }
     }
 }
+
 
 
 

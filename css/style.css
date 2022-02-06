@@ -69,29 +69,47 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 }
 
 /*Fin Header*/
-/*Seccion Uno*/
-.seccion-uno .container-card {
-  max-width: 1200px;
-  margin: 6em auto 8em auto;
-  perspective: 1000px;
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+}
+@media screen and (max-width: 480px) {
+  .btn-wsp {
+    display: none;
+  }
+}
+
+.seccion-uno .container-card .card-father .card .card-front3 .body-card-front, .seccion-uno .container-card .card-father .card .card-front2 .body-card-front, .seccion-uno .container-card .card-father .card .card-front .body-card-front, .seccion-uno .container-card {
   display: flex;
   justify-content: center;
+}
+
+/*Seccion Uno*/
+.seccion-uno .container-card {
+  max-width: 75em;
+  margin: auto auto;
+  perspective: 62.5em;
   flex-wrap: wrap;
 }
 .seccion-uno .container-card .card-father {
-  margin: 20px;
-  perspective: 1000px;
+  margin: 1.25em;
+  perspective: 62.5em;
 }
 .seccion-uno .container-card .card-father:hover .card {
   transform: rotateY(180deg);
 }
 .seccion-uno .container-card .card-father .card {
-  width: 350px;
-  height: 400px;
+  width: 21.8em;
+  height: 25em;
   position: relative;
   transform-style: preserve-3d;
   transition: all 600ms;
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front {
   background-image: url("../../src/multimedia/imagenes/imagenes/fotohome.jpg");
@@ -104,7 +122,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   left: 0;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front .bg {
   width: 100%;
@@ -113,18 +131,19 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front .body-card-front {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
+  padding: 2.5em;
   align-items: center;
   color: #fff;
   transform: translateZ(60px);
+}
+.seccion-uno .container-card .card-father .card .card-front .body-card-front h2 {
+  font-size: 1.6em;
 }
 .seccion-uno .container-card .card-father .card .card-back {
   background-size: cover;
@@ -136,28 +155,28 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   left: 0;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: 20px;
+  border-radius: 1.25em;
   transform: rotateY(180deg);
   background: white;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back {
-  padding: 40px;
+  padding: 2.5em;
   text-align: center;
   transform: translateZ(60px);
 }
-.seccion-uno .container-card .card-father .card .card-back .body-card-back p {
-  margin-top: 30px;
-  font-size: 18px;
+.seccion-uno .container-card .card-father .card .card-back .body-card-back .text-card {
+  margin-top: 1.8em;
+  font-size: 1.1em;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input {
-  padding: 10px 40px;
-  margin-top: 30px;
-  font-size: 16px;
+  padding: 0.6em 2.5em;
+  margin-top: 1.8em;
+  font-size: 1em;
   border: none;
   color: white;
   background: #a6668c;
   box-shadow: 1px 1px 30px -5px #a6668c;
-  border-radius: 10px;
+  border-radius: 0.6em;
   transition: box-shadow 600ms;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input:hover {
@@ -174,7 +193,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   left: 0;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front2 .bg {
   width: 100%;
@@ -183,18 +202,19 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front2 .body-card-front {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
+  padding: 2.5em;
   align-items: center;
   color: #fff;
   transform: translateZ(60px);
+}
+.seccion-uno .container-card .card-father .card .card-front2 .body-card-front h2 {
+  font-size: 1.6em;
 }
 .seccion-uno .container-card .card-father .card .card-back {
   background-size: cover;
@@ -206,29 +226,29 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   left: 0;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: 20px;
+  border-radius: 1.25em;
   transform: rotateY(180deg);
   background: white;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back {
-  padding: 40px;
+  padding: 2.5em;
   text-align: center;
   transform: translateZ(60px);
 }
-.seccion-uno .container-card .card-father .card .card-back .body-card-back p {
-  margin-top: 30px;
-  font-size: 18px;
+.seccion-uno .container-card .card-father .card .card-back .body-card-back .text-card {
+  margin-top: 1.8em;
+  font-size: 1.1em;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input {
-  padding: 10px 40px;
-  margin-top: 30px;
-  font-size: 16px;
+  padding: 0.6em 2.5em;
+  margin-top: 1.8em;
+  font-size: 1em;
   cursor: pointer;
   border: none;
   color: white;
   background: #a6668c;
   box-shadow: 1px 1px 30px -5px #a6668c;
-  border-radius: 10px;
+  border-radius: 0.6em;
   transition: box-shadow 600ms;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input:hover {
@@ -245,7 +265,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   left: 0;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front3 .bg {
   width: 100%;
@@ -254,18 +274,19 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-  border-radius: 20px;
+  border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front3 .body-card-front {
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
+  padding: 2.5em;
   align-items: center;
   color: #fff;
   transform: translateZ(60px);
+}
+.seccion-uno .container-card .card-father .card .card-front3 .body-card-front h2 {
+  font-size: 1.6em;
 }
 .seccion-uno .container-card .card-father .card .card-back {
   background-size: cover;
@@ -282,31 +303,40 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   background: white;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back {
-  padding: 40px;
+  padding: 1.25em;
   text-align: center;
   transform: translateZ(60px);
 }
-.seccion-uno .container-card .card-father .card .card-back .body-card-back p {
-  margin-top: 30px;
-  font-size: 18px;
+.seccion-uno .container-card .card-father .card .card-back .body-card-back .text-card {
+  margin-top: 1em;
+  font-size: 1.3em;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input {
-  padding: 10px 40px;
-  margin-top: 30px;
-  font-size: 16px;
+  padding: 0.6em 2.5em;
+  margin-top: 1.8em;
+  font-size: 1em;
   cursor: pointer;
   border: none;
   color: white;
   background: #a6668c;
   box-shadow: 1px 1px 30px -5px #a6668c;
-  border-radius: 10px;
+  border-radius: 0.6em;
   transition: box-shadow 600ms;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back input:hover {
   box-shadow: 1px 1px 30px 0px #a6668c;
 }
-.seccion-uno .mision {
-  border: 2px solid black;
+.seccion-uno .row {
+  margin: 2em 3em;
+}
+.seccion-uno .row .titulo {
+  color: #a6668c;
+  font-family: "PT Serif", serif;
+}
+.seccion-uno .row p {
+  font-size: 1.3em;
+  color: black;
+  opacity: 0.9;
 }
 
 /*Fin seccio Uno*/
@@ -322,11 +352,6 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   opacity: 0.6;
   font-size: 1.5em;
   font-family: "PT Serif", serif;
-}
-@media screen and (max-width: 480px) {
-  .container-dos .carrusel-imagenes {
-    display: none;
-  }
 }
 
 /*Fin seccion dos*/
@@ -364,6 +389,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   .btn-wsp {
     display: none;
   }
+}
+
+.seccion-uno .container-card, .seccion-uno .container-card .card-father .card .card-front .body-card-front, .seccion-uno .container-card .card-father .card .card-front2 .body-card-front, .seccion-uno .container-card .card-father .card .card-front3 .body-card-front {
+  display: flex;
+  justify-content: center;
 }
 
 /*Fin Boton Whasapp*/
@@ -437,7 +467,7 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
 /*Fin Header Contacto*/
 /*Contacto*/
 .seccion-contacto .formulario {
-  width: 28em;
+  width: 40em;
   margin: auto;
   background: rgba(0, 0, 0, 0.4);
   padding: 0.6em 1.25em;
@@ -494,6 +524,11 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
   .btn-wsp {
     display: none;
   }
+}
+
+.seccion-uno .container-card, .seccion-uno .container-card .card-father .card .card-front .body-card-front, .seccion-uno .container-card .card-father .card .card-front2 .body-card-front, .seccion-uno .container-card .card-father .card .card-front3 .body-card-front {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
