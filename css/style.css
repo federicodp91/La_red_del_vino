@@ -112,7 +112,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   border-radius: 1.25em;
 }
 .seccion-uno .container-card .card-father .card .card-front {
-  background-image: url("../../src/multimedia/imagenes/imagenes/fotohome.jpg");
+  background-image: url("../src/multimedia/imagenes/imagenes/fotohome.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -183,7 +183,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   box-shadow: 1px 1px 30px 0px #a6668c;
 }
 .seccion-uno .container-card .card-father .card .card-front2 {
-  background-image: url("../../src/multimedia/imagenes/imagenes/uvas.png");
+  background-image: url("../src/multimedia/imagenes/imagenes/uvas.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -255,7 +255,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   box-shadow: 1px 1px 30px 0px #a6668c;
 }
 .seccion-uno .container-card .card-father .card .card-front3 {
-  background-image: url("../../src/multimedia/imagenes/imagenes/background-franquicias.png");
+  background-image: url("../src/multimedia/imagenes/imagenes/background-franquicias.png");
   background-size: cover;
   background-position: center;
   width: 100%;
