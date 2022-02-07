@@ -32,17 +32,23 @@ body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
   font-size: 1.3em;
 }
 body header .container-fluid .barra-navegacion .nav-item .nav-link:hover {
-  transition: 1.7s;
-  transform: scale(1.1);
-  text-shadow: 0 0 1em #a6668c;
+  background: -webkit-linear-gradient(to right, black, #a6668c);
+  background: linear-gradient(to right, black, #a6668c);
+  opacity: 0.8;
+  color: white;
+  border-radius: 40px;
+}
+body header .container-fluid .barra-navegacion .nav-item .nav-link:hover::after {
+  content: none;
 }
 @media screen and (max-width: 991px) {
   body header .container-fluid .barra-navegacion .nav-item .nav-link {
     justify-content: center;
     display: inline-block;
-    background-color: whitesmoke;
-    opacity: 0.8;
+    background-color: black;
+    color: white;
     margin-bottom: 1em;
+    border-radius: 20px;
   }
   body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
     display: none;
@@ -65,7 +71,6 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
     display: inline;
     background-color: whitesmoke;
-    opacity: 0.8;
   }
 }
 
@@ -328,6 +333,8 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   box-shadow: 1px 1px 30px 0px #a6668c;
 }
 .seccion-uno .row {
+  box-shadow: 7px 13px 57px #000;
+  border-radius: 20px;
   margin: 2em 3em;
 }
 @media screen and (max-width: 480px) {
@@ -351,6 +358,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .seccion-uno .video-contenedor video {
   border-radius: 20%;
 }
+@media screen and (max-width: 991px) {
+  .seccion-uno .video-contenedor video {
+    width: 100%;
+  }
+}
 
 /*Fin seccio Uno*/
 /*Seccion dos*/
@@ -359,6 +371,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   margin-top: 10em;
   border: 2px solid beige;
   border-radius: 7em;
+  box-shadow: 7px 13px 57px #000;
 }
 @media screen and (max-width: 480px) {
   .seccion-dos {
@@ -451,6 +464,9 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 /*Seccion tres*/
 .seccion-tres {
   margin-bottom: 5%;
+}
+.seccion-tres .card {
+  box-shadow: 7px 13px 57px #000;
 }
 .seccion-tres .card .card-body .titulo-dos {
   color: black;

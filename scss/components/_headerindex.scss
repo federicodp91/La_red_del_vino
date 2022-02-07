@@ -31,16 +31,25 @@ body {
                             font-size: 1.3em;
                         }
                         &:hover {
-                            transition: 1.7s;
-                            transform: scale(1.1);
-                            text-shadow: 0 0 1em $color-violeta;
+                            // transition: 2s;
+                            // transform: scale(1.1);
+                            // text-shadow: 0 0 1em $color-gris;
+                            background: -webkit-linear-gradient(to right, black,  $color-violeta); 
+                            background: linear-gradient(to right, black, $color-violeta);
+                            opacity: .8;
+                            color: white;
+                            border-radius: 40px;
+                            &::after{
+                                content: none;
+                            }
                         }
                         @media screen and (max-width: 991px) {
                             justify-content: center;
                             display: inline-block;
-                            background-color: whitesmoke;
-                            opacity: 0.8;
+                            background-color: black;
+                            color: white;
                             margin-bottom: 1em;
+                            border-radius: 20px;
                             &::after{
                                 display: none;
                             }
@@ -67,7 +76,6 @@ body {
                         @media screen and (max-width: 991px) {
                             display:inline;
                             background-color: whitesmoke;
-                            opacity: 0.8;
                         }
                     }
                 }

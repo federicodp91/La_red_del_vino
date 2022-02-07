@@ -246,6 +246,8 @@
         }
     }
     .row{
+        box-shadow: 7px 13px 57px #000;
+        border-radius: 20px;
         margin: 2em 3em;
         @media screen and (max-width: 480px) {
             margin: auto;
@@ -265,6 +267,9 @@
         justify-content: center;
         video{
             border-radius: 20%;
+            @media screen and (max-width: 991px) {
+                width: 100%;
+            }
         }
     }
 }
