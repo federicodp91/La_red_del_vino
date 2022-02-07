@@ -9,6 +9,7 @@ body {
   background: #8e9eab;
   background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
   background: linear-gradient(to right, #eef2f3, #8e9eab);
+  overflow-x: hidden;
 }
 body header .container-fluid {
   padding-bottom: 35%;
@@ -91,7 +92,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 
 /*Seccion Uno*/
 .seccion-uno .container-card {
-  max-width: 75em;
+  max-width: 74em;
   margin: auto auto;
   perspective: 62.5em;
   flex-wrap: wrap;
@@ -327,31 +328,119 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   box-shadow: 1px 1px 30px 0px #a6668c;
 }
 .seccion-uno .row {
+  border: 2px solid beige;
+  border-radius: 4em;
   margin: 2em 3em;
+}
+@media screen and (max-width: 480px) {
+  .seccion-uno .row {
+    border: none;
+    margin: auto;
+  }
 }
 .seccion-uno .row .titulo {
   color: #a6668c;
   font-family: "PT Serif", serif;
 }
 .seccion-uno .row p {
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: black;
   opacity: 0.9;
 }
 
 /*Fin seccio Uno*/
 /*Seccion dos*/
-.container-dos {
-  margin-bottom: 10%;
+.seccion-dos {
+  margin-bottom: 2em;
+  margin-top: 10em;
+  border: 2px solid beige;
+  border-radius: 7em;
 }
-.container-dos .titulo {
-  color: #a6668c;
+@media screen and (max-width: 480px) {
+  .seccion-dos {
+    border: none;
+  }
 }
-.container-dos .titulo-dos {
-  color: black;
-  opacity: 0.6;
-  font-size: 1.5em;
+.seccion-dos h2 {
+  display: flex;
+  justify-content: center;
   font-family: "PT Serif", serif;
+  color: #a6668c;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 480px) {
+  .seccion-dos h2 {
+    width: 100%;
+  }
+}
+.seccion-dos .div-contenedor .contenedor1 h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Serif", serif;
+  opacity: 0.8;
+}
+.seccion-dos .div-contenedor .contenedor1 img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.seccion-dos .div-contenedor .contenedor2 h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Serif", serif;
+  opacity: 0.8;
+}
+.seccion-dos .div-contenedor .contenedor2 img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.seccion-dos .div-contenedor .contenedor3 {
+  margin-bottom: 0.5em;
+}
+.seccion-dos .div-contenedor .contenedor3 h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Serif", serif;
+  opacity: 0.8;
+}
+.seccion-dos .div-contenedor .contenedor3 img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.seccion-dos .div-contenedor2 .contenedor4 h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Serif", serif;
+  opacity: 0.8;
+}
+.seccion-dos .div-contenedor2 .contenedor4 img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.seccion-dos .div-contenedor2 .contenedor5 h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Serif", serif;
+  opacity: 0.8;
+}
+.seccion-dos .div-contenedor2 .contenedor5 img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.seccion-dos .div-contenedor2 .contenedor6 h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Serif", serif;
+  opacity: 0.8;
+}
+.seccion-dos .div-contenedor2 .contenedor6 img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 /*Fin seccion dos*/

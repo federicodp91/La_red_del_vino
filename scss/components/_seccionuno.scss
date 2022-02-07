@@ -4,7 +4,7 @@
 /*Seccion Uno*/
 .seccion-uno{
     .container-card{
-        max-width: 75em;
+        max-width: 74em;
         margin: auto auto;
         perspective: 62.5em;
         @extend %flex;
@@ -246,13 +246,19 @@
         }
     }
     .row{
+        border: 2px solid beige;
+        border-radius: 4em ;
         margin: 2em 3em;
+        @media screen and (max-width: 480px) {
+            border: none;
+            margin: auto;
+        }
         .titulo{
             color: $color-violeta;
             font-family: $fonts-titulos;
         }
         p{
-            font-size: 1.3em;
+            font-size: 1.4em;
             color: black;
             opacity: 0.9;
         }
