@@ -1,0 +1,82 @@
+.form-register{
+    width: 40em;
+    background: #fff;
+    padding: 1.8em;
+    margin: auto;
+    margin-top: 6.25em;
+    margin-bottom: 10em;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    h3{
+        font-size: 1.3em;
+        margin-bottom: 1.25em;
+        color: black;
+        font-size: 1.7em;
+        color: $color-violeta;
+        margin: auto;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .controls{
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 1em;
+        border: 1px solid $color-violeta;
+        font-family: 'calibri';
+        font-size: 1.1em;
+        color: black;
+    }
+    .controls2{
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid $color-violeta;
+        font-family: 'calibri';
+        font-size: 1.1em;
+        color: black;
+        min-height: 10em;
+    }
+    p{
+        height: 2.5em;
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 2.5em;
+        color: #000;
+    }
+    .text-2{
+        height: 2.5em;
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 2.5em;
+        color: #000;
+        opacity: .9;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+        &:hover{
+            color: $color-violeta;
+            text-decoration: underline;
+        }
+    }
+    .botons{
+        width: 100%;
+        background: $color-violeta;
+        border: none;
+        padding: 12px;
+        color: black;
+        margin: 1em 0;
+        font-size: 1em;
+    }
+}

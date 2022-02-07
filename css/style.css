@@ -129,6 +129,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: 1.25em;
+  box-shadow: 7px 13px 37px #000;
 }
 .seccion-uno .container-card .card-father .card .card-front .bg {
   width: 100%;
@@ -200,6 +201,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: 1.25em;
+  box-shadow: 7px 13px 37px #000;
 }
 .seccion-uno .container-card .card-father .card .card-front2 .bg {
   width: 100%;
@@ -272,6 +274,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: 1.25em;
+  box-shadow: 7px 13px 37px #000;
 }
 .seccion-uno .container-card .card-father .card .card-front3 .bg {
   width: 100%;
@@ -307,6 +310,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   border-radius: 20px;
   transform: rotateY(180deg);
   background: white;
+  box-shadow: 7px 13px 37px #000;
 }
 .seccion-uno .container-card .card-father .card .card-back .body-card-back {
   padding: 1.25em;
@@ -638,6 +642,89 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
 .seccion-uno .container-card, .seccion-uno .container-card .card-father .card .card-front .body-card-front, .seccion-uno .container-card .card-father .card .card-front2 .body-card-front, .seccion-uno .container-card .card-father .card .card-front3 .body-card-front {
   display: flex;
   justify-content: center;
+}
+
+.form-register {
+  width: 40em;
+  background: #fff;
+  padding: 1.8em;
+  margin: auto;
+  margin-top: 6.25em;
+  margin-bottom: 10em;
+  border-radius: 4px;
+  font-family: "calibri";
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+.form-register h3 {
+  font-size: 1.3em;
+  margin-bottom: 1.25em;
+  color: black;
+  font-size: 1.7em;
+  color: #a6668c;
+  margin: auto;
+}
+.form-register a {
+  display: flex;
+  justify-content: center;
+}
+.form-register a:hover {
+  text-decoration: none;
+}
+.form-register .controls {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  border: 1px solid #a6668c;
+  font-family: "calibri";
+  font-size: 1.1em;
+  color: black;
+}
+.form-register .controls2 {
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #a6668c;
+  font-family: "calibri";
+  font-size: 1.1em;
+  color: black;
+  min-height: 10em;
+}
+.form-register p {
+  height: 2.5em;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 2.5em;
+  color: #000;
+}
+.form-register .text-2 {
+  height: 2.5em;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 2.5em;
+  color: #000;
+  opacity: 0.9;
+}
+.form-register a {
+  color: black;
+  text-decoration: none;
+}
+.form-register a:hover {
+  color: #a6668c;
+  text-decoration: underline;
+}
+.form-register .botons {
+  width: 100%;
+  background: #a6668c;
+  border: none;
+  padding: 12px;
+  color: black;
+  margin: 1em 0;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
