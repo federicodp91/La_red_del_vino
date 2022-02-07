@@ -9,13 +9,16 @@
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
+    @media screen and (max-width: 630px) {
+        width: 100%;
+    }
     h3{
         font-size: 1.3em;
         margin-bottom: 1.25em;
         color: black;
         font-size: 1.7em;
         color: $color-violeta;
-        margin: auto;
+        margin: auto auto .2em auto;
     }
     a{
         display: flex;
@@ -46,6 +49,8 @@
         font-size: 1.1em;
         color: black;
         min-height: 10em;
+        max-height: 18.75em;
+        padding-bottom: 8em;
     }
     p{
         height: 2.5em;
@@ -61,6 +66,9 @@
         line-height: 2.5em;
         color: #000;
         opacity: .9;
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
     }
     a{
         color: black;

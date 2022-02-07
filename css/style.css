@@ -43,15 +43,15 @@ body header .container-fluid .barra-navegacion .nav-item .nav-link:hover::after 
 }
 @media screen and (max-width: 991px) {
   body header .container-fluid .barra-navegacion .nav-item .nav-link {
-    justify-content: center;
     display: inline-block;
-    background-color: black;
+    margin: 0.1em;
+    background: -webkit-linear-gradient(to right, black, #a6668c);
+    background: linear-gradient(to right, black, #a6668c);
     color: white;
-    margin-bottom: 1em;
-    border-radius: 20px;
+    border-radius: 40px;
   }
   body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
-    display: none;
+    content: none;
   }
 }
 body header .container-fluid .contenedor .contenedor-titulo .la-red {
@@ -247,20 +247,30 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   margin-top: 1.8em;
   font-size: 1.1em;
 }
-.seccion-uno .container-card .card-father .card .card-back .body-card-back input {
-  padding: 0.6em 2.5em;
-  margin-top: 1.8em;
-  font-size: 1em;
+.seccion-uno .container-card .card-father .card .card-back .body-card-back button {
+  position: relative;
+  display: inline-block;
+  margin: 0.6em;
+  padding: 1em 1.8em;
+  text-align: center;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #a6668c;
+  background: transparent;
   cursor: pointer;
-  border: none;
-  color: white;
-  background: #a6668c;
-  box-shadow: 1px 1px 30px -5px #a6668c;
-  border-radius: 0.6em;
-  transition: box-shadow 600ms;
+  transition: ease-out 0.5s;
+  border-radius: 3.75em;
+  border: 2px solid #a6668c;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #a6668c;
 }
-.seccion-uno .container-card .card-father .card .card-back .body-card-back input:hover {
-  box-shadow: 1px 1px 30px 0px #a6668c;
+.seccion-uno .container-card .card-father .card .card-back .body-card-back button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #a6668c;
+}
+.seccion-uno .container-card .card-father .card .card-back .body-card-back button:active {
+  transform: scale(0.9);
 }
 .seccion-uno .container-card .card-father .card .card-front3 {
   background-image: url("../src/multimedia/imagenes/imagenes/background-franquicias.png");
@@ -339,7 +349,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .seccion-uno .row {
   box-shadow: 7px 13px 57px #000;
   border-radius: 20px;
-  margin: 2em 3em;
+  margin: 2.1em 3em;
 }
 @media screen and (max-width: 480px) {
   .seccion-uno .row {
@@ -355,32 +365,15 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   color: black;
   opacity: 0.9;
 }
-.seccion-uno .video-contenedor {
-  display: flex;
-  justify-content: center;
-}
-.seccion-uno .video-contenedor video {
-  border-radius: 20%;
-}
-@media screen and (max-width: 991px) {
-  .seccion-uno .video-contenedor video {
-    width: 100%;
-  }
-}
 
 /*Fin seccio Uno*/
 /*Seccion dos*/
 .seccion-dos {
-  margin-bottom: 2em;
-  margin-top: 10em;
+  margin-bottom: 15em;
+  margin-top: 20em;
   border: 2px solid beige;
   border-radius: 7em;
   box-shadow: 7px 13px 57px #000;
-}
-@media screen and (max-width: 480px) {
-  .seccion-dos {
-    border: none;
-  }
 }
 .seccion-dos h2 {
   display: flex;
@@ -467,7 +460,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 /*Fin seccion dos*/
 /*Seccion tres*/
 .seccion-tres {
-  margin-bottom: 5%;
+  margin-bottom: 10em;
 }
 .seccion-tres .card {
   box-shadow: 7px 13px 57px #000;
@@ -485,6 +478,39 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   content: "*";
   color: #a6668c;
   font-size: 1.3em;
+}
+.seccion-tres .card a {
+  display: flex;
+  text-decoration: none;
+}
+.seccion-tres .card a button {
+  position: relative;
+  margin: auto;
+  padding: 1em 1.8em;
+  text-align: center;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #a6668c;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border-radius: 3.75em;
+  border: 2px solid #a6668c;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #a6668c;
+}
+.seccion-tres .card a button:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #a6668c;
+}
+.seccion-tres .card a button:active {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 480px) {
+  .seccion-tres .card a button {
+    width: 100%;
+  }
 }
 
 /*Fin Seccion tres*/
@@ -510,120 +536,6 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 }
 
 /*Fin Boton Whasapp*/
-/*Header contacto*/
-body {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  background: #8e9eab;
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
-  background: linear-gradient(to right, #eef2f3, #8e9eab);
-}
-body header .contenedor-fluido2 {
-  padding-bottom: 0;
-  background-image: url("../src/multimedia/imagenes/imagenes/barril.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-}
-body header .contenedor-fluido2 .barra-navegacion {
-  font-size: 1.1em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  color: #9a8c98;
-  opacity: 0.9;
-  text-decoration: none;
-  list-style: none;
-}
-body header .contenedor-fluido2 .barra-navegacion .nav-item .nav-link::after {
-  content: "|";
-  color: #a6668c;
-  font-size: 1.3em;
-}
-body header .contenedor-fluido2 .barra-navegacion .nav-item .nav-link:hover {
-  transition: 1.7s;
-  transform: scale(1.1);
-  text-shadow: 0 0 1em #a6668c;
-}
-@media screen and (max-width: 991px) {
-  body header .contenedor-fluido2 .barra-navegacion .nav-item .nav-link {
-    justify-content: center;
-    display: inline-block;
-    background-color: whitesmoke;
-    opacity: 0.8;
-    margin-bottom: 1em;
-  }
-  body header .contenedor-fluido2 .barra-navegacion .nav-item .nav-link::after {
-    display: none;
-  }
-}
-body header .contenedor-fluido2 .contenedor .contenedor-titulo .la-red {
-  color: #a6668c;
-  font-size: 3em;
-  font-family: "PT Serif", serif;
-  margin-top: -2.2%;
-}
-body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
-  color: black;
-  opacity: 0.6;
-  font-size: 1.5em;
-  font-family: "PT Serif", serif;
-  margin-top: -0.5%;
-}
-@media screen and (max-width: 991px) {
-  body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
-    display: inline;
-    background-color: whitesmoke;
-    opacity: 0.8;
-  }
-}
-
-/*Fin Header Contacto*/
-/*Contacto*/
-.seccion-contacto .formulario {
-  width: 40em;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 0.6em 1.25em;
-  margin-top: 1.25em;
-  border-radius: 0.75em;
-  font-family: "PT Serif", serif;
-}
-@media screen and (max-width: 480px) {
-  .seccion-contacto .formulario {
-    width: 100%;
-  }
-}
-.seccion-contacto .formulario .contact {
-  color: #fff;
-  text-align: center;
-  margin: 0;
-  font-size: 2.4em;
-  margin-bottom: 0.7em;
-  font-family: "Open Sans", sans-serif;
-}
-.seccion-contacto .formulario input {
-  width: 100%;
-  margin-bottom: 1.25em;
-  padding: 0.4em;
-  font-size: 1em;
-  border: none;
-}
-.seccion-contacto .formulario .text-area-contacto {
-  width: 100%;
-  margin-bottom: 1.25em;
-  padding: 0.4em;
-  font-size: 1em;
-  border: none;
-  min-height: 6.25em;
-  max-height: 18.75em;
-}
-.seccion-contacto .formulario #boton-contacto {
-  background: #31384a;
-  color: #fff;
-  padding: 1.25em;
-}
-
-/* Fin Contacto*/
 .btn-wsp {
   position: fixed;
   width: 55px;
@@ -656,13 +568,18 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
   color: white;
   box-shadow: 7px 13px 37px #000;
 }
+@media screen and (max-width: 630px) {
+  .form-register {
+    width: 100%;
+  }
+}
 .form-register h3 {
   font-size: 1.3em;
   margin-bottom: 1.25em;
   color: black;
   font-size: 1.7em;
   color: #a6668c;
-  margin: auto;
+  margin: auto auto 0.2em auto;
 }
 .form-register a {
   display: flex;
@@ -693,6 +610,8 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
   font-size: 1.1em;
   color: black;
   min-height: 10em;
+  max-height: 18.75em;
+  padding-bottom: 8em;
 }
 .form-register p {
   height: 2.5em;
@@ -708,6 +627,11 @@ body header .contenedor-fluido2 .contenedor .contenedor-subtitulo .titulo {
   line-height: 2.5em;
   color: #000;
   opacity: 0.9;
+}
+@media screen and (max-width: 480px) {
+  .form-register .text-2 {
+    display: none;
+  }
 }
 .form-register a {
   color: black;
