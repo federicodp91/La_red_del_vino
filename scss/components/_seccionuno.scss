@@ -246,11 +246,8 @@
         }
     }
     .row{
-        border: 2px solid beige;
-        border-radius: 4em ;
         margin: 2em 3em;
         @media screen and (max-width: 480px) {
-            border: none;
             margin: auto;
         }
         .titulo{
@@ -261,6 +258,13 @@
             font-size: 1.4em;
             color: black;
             opacity: 0.9;
+        }
+    }
+    .video-contenedor{
+        display: flex;
+        justify-content: center;
+        video{
+            border-radius: 20%;
         }
     }
 }
