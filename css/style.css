@@ -1,4 +1,5 @@
 /*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /*Header*/
@@ -6,9 +7,6 @@ body {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  background: #8e9eab;
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
-  background: linear-gradient(to right, #eef2f3, #8e9eab);
   overflow-x: hidden;
 }
 body header .container-fluid {
@@ -18,16 +16,16 @@ body header .container-fluid {
   background-attachment: fixed;
 }
 body header .container-fluid .barra-navegacion {
-  font-size: 1.1em;
-  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
+  font-family: "Spinnaker", sans-serif;
   font-weight: bold;
   color: #9a8c98;
-  opacity: 0.9;
+  opacity: 0.8;
   text-decoration: none;
   list-style: none;
 }
 body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
-  content: "|";
+  content: " |";
   color: #a6668c;
   font-size: 1.3em;
 }
@@ -151,6 +149,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 }
 .seccion-uno .container-card .card-father .card .card-front .body-card-front h2 {
   font-size: 1.6em;
+  font-family: "Spinnaker", sans-serif;
 }
 .seccion-uno .container-card .card-father .card .card-back {
   background-size: cover;
@@ -223,6 +222,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 }
 .seccion-uno .container-card .card-father .card .card-front2 .body-card-front h2 {
   font-size: 1.6em;
+  font-family: "Spinnaker", sans-serif;
 }
 .seccion-uno .container-card .card-father .card .card-back {
   background-size: cover;
@@ -306,6 +306,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 }
 .seccion-uno .container-card .card-father .card .card-front3 .body-card-front h2 {
   font-size: 1.6em;
+  font-family: "Spinnaker", sans-serif;
 }
 .seccion-uno .container-card .card-father .card .card-back {
   background-size: cover;
@@ -363,14 +364,44 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .seccion-uno .row p {
   font-size: 1.4em;
   color: black;
-  opacity: 0.9;
+  opacity: 0.7;
+  font-family: "Spinnaker", sans-serif;
+}
+.seccion-uno .banner {
+  background-color: #273036;
+  margin: 0;
+  color: whitesmoke;
+  font-family: "Spinnaker", sans-serif;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1300px) {
+  .seccion-uno .banner {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .seccion-uno .banner {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 750px) {
+  .seccion-uno .banner {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .seccion-uno .banner {
+    font-size: 1.3em;
+  }
 }
 
 /*Fin seccio Uno*/
 /*Seccion dos*/
 .seccion-dos {
-  margin-bottom: 15em;
-  margin-top: 20em;
+  margin-bottom: 5em;
+  margin-top: 0em;
   border: 2px solid beige;
   border-radius: 7em;
   box-shadow: 7px 13px 57px #000;
@@ -465,14 +496,18 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .seccion-tres .card {
   box-shadow: 7px 13px 57px #000;
 }
+.seccion-tres .card .card-body {
+  font-family: "Spinnaker", sans-serif;
+}
 .seccion-tres .card .card-body .titulo-dos {
   color: black;
   opacity: 0.6;
   font-size: 1.5em;
-  font-family: "PT Serif", serif;
+  font-family: "Spinnaker", sans-serif;
 }
 .seccion-tres .card .card-body .lista-requisitos {
   list-style: none;
+  font-family: "Spinnaker", sans-serif;
 }
 .seccion-tres .card .card-body .lista-requisitos li::before {
   content: "*";
@@ -580,6 +615,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   font-size: 1.7em;
   color: #a6668c;
   margin: auto auto 0.2em auto;
+  font-family: "Spinnaker", sans-serif;
 }
 .form-register a {
   display: flex;
@@ -598,6 +634,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   font-family: "calibri";
   font-size: 1.1em;
   color: black;
+  font-family: "Spinnaker", sans-serif;
 }
 .form-register .controls2 {
   width: 100%;
@@ -612,6 +649,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   min-height: 10em;
   max-height: 18.75em;
   padding-bottom: 8em;
+  font-family: "Spinnaker", sans-serif;
 }
 .form-register p {
   height: 2.5em;
@@ -619,6 +657,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   font-size: 1.1em;
   line-height: 2.5em;
   color: #000;
+  font-family: "Spinnaker", sans-serif;
 }
 .form-register .text-2 {
   height: 2.5em;
@@ -636,6 +675,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .form-register a {
   color: black;
   text-decoration: none;
+  font-family: "Spinnaker", sans-serif;
 }
 .form-register a:hover {
   color: #a6668c;
@@ -649,6 +689,27 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   color: black;
   margin: 1em 0;
   font-size: 1em;
+  font-family: "Spinnaker", sans-serif;
+}
+
+.seccion-deco .banner {
+  background-color: #273036;
+  margin: 0;
+  color: whitesmoke;
+  font-family: "Spinnaker", sans-serif;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 675px) {
+  .seccion-deco .banner {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .seccion-deco .banner {
+    font-size: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

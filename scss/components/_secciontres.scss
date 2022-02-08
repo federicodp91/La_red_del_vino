@@ -4,14 +4,16 @@
     .card{
         box-shadow: 7px 13px 57px #000;
         .card-body{
+            font-family:'Spinnaker', sans-serif; 
             .titulo-dos{
                 color:black;
                 opacity: 0.6;
                 font-size: 1.5em;
-                font-family: $fonts-titulos;
+                font-family:'Spinnaker', sans-serif; 
             }
             .lista-requisitos{
                 list-style: none;
+                font-family:'Spinnaker', sans-serif; 
                 li{
                     &::before {
                         content:'*';
