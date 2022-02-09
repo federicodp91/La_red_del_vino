@@ -1,10 +1,13 @@
 /*Seccion dos*/
 .seccion-dos{
-    margin-bottom: 5em;
-    margin-top: 0em;
+    margin-bottom: 2em;
+    margin-top: 2.5em;
     border: 2px solid beige;
     border-radius: 7em ;
     box-shadow: 7px 13px 57px #000;
+    @media screen and (max-width: 480px) {
+        border-radius: 2em;
+    }
     h2{
         display: flex;
         justify-content: center;
@@ -13,6 +16,7 @@
         margin-bottom: 1em;
         @media screen and (max-width: 480px) {
             width: 100%;
+            font-size: 1.3em;
         }
     }
     .div-contenedor{

@@ -16,7 +16,7 @@ body header .container-fluid {
   background-attachment: fixed;
 }
 body header .container-fluid .barra-navegacion {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-family: "Spinnaker", sans-serif;
   font-weight: bold;
   color: #9a8c98;
@@ -393,6 +393,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 }
 @media screen and (max-width: 500px) {
   .seccion-uno .banner {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .seccion-uno .banner {
     font-size: 1.3em;
   }
 }
@@ -400,11 +405,16 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 /*Fin seccio Uno*/
 /*Seccion dos*/
 .seccion-dos {
-  margin-bottom: 5em;
-  margin-top: 0em;
+  margin-bottom: 2em;
+  margin-top: 2.5em;
   border: 2px solid beige;
   border-radius: 7em;
   box-shadow: 7px 13px 57px #000;
+}
+@media screen and (max-width: 480px) {
+  .seccion-dos {
+    border-radius: 2em;
+  }
 }
 .seccion-dos h2 {
   display: flex;
@@ -416,6 +426,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 @media screen and (max-width: 480px) {
   .seccion-dos h2 {
     width: 100%;
+    font-size: 1.3em;
   }
 }
 .seccion-dos .div-contenedor .contenedor1 h3 {
@@ -491,6 +502,7 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 /*Fin seccion dos*/
 /*Seccion tres*/
 .seccion-tres {
+  margin-top: 2em;
   margin-bottom: 10em;
 }
 .seccion-tres .card {
