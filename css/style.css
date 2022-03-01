@@ -779,7 +779,7 @@ body header .navbar .container-fluid .contenedor .contenedor-subtitulo a .sub-ti
 
 .seccion-deco .banner {
   background-color: #273036;
-  margin: 0;
+  margin: -1px;
   color: whitesmoke;
   font-family: "Spinnaker", sans-serif;
   font-size: 5em;
