@@ -2,16 +2,16 @@
 @import '../base/mapas';
 /*Header*/
 body {
-    margin: 0%;
-    padding: 0%;
     box-sizing: border-box;
-    overflow-x:hidden ;
+    overflow-x:hidden;
     header{
         .container-fluid{
             padding-bottom: 35%;
             background-image: url('../src/multimedia/imagenes/imagenes/barril.jpg');
             background-size:cover;
             background-attachment: fixed;
+            .navbar-brand{
+            }
             .barra-navegacion{
                 font-size: 1.2em;
                 font-family:'Spinnaker', sans-serif; 
@@ -22,31 +22,55 @@ body {
                 list-style: none;
                 .nav-item{
                     .nav-link{
-                        &::after {
-                            content: ' |';
-                            color: $color-violeta;
-                            font-size: 1.3em;
-                        }
-                        &:hover {
-                            background: -webkit-linear-gradient(to right, black,  $color-violeta); 
-                            background: linear-gradient(to right, black, $color-violeta);
-                            opacity: .8;
-                            color: white;
-                            border-radius: 40px;
-                            &::after{
-                                content: none;
-                            }
-                        }
-                        @media screen and (max-width: 991px) {
-                            display: inline-block;
-                            margin: .1em;
-                            background: -webkit-linear-gradient(to right, black,  $color-violeta); 
-                            background: linear-gradient(to right, black, $color-violeta);
-                            color: white;
-                            border-radius: 40px;
-                            &::after{
-                                content: none;
-                            }
+                    color:#000;
+                    opacity: .8;
+                    text-decoration: none;
+                    padding: .3em 0;
+                    margin: 0 1em;
+                    position: relative;
+                    letter-spacing: 2px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $color-violeta;
+                        left: 0;
+                        transform: scaleX(0);
+                        transition: all 1s;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $color-violeta;
+                        left: 0;
+                        transform: scaleX(0);
+                        transition: all .5s;
+                    }
+                    &::before{
+                        top: 0;
+                        transform-origin: left;
+                    }
+                    &::after{
+                        bottom: 0;
+                        transform-origin: right;
+                    }
+                    &:hover::before{
+                        transform: scaleX(1);
+                    }
+                    &:hover::after{
+                        transform: scaleX(1);
+                    }
+                    @media screen and (max-width: 991px) {
+                        color: white;
+                        display: inline-block;
+                        margin: .3em;
+                        margin-bottom: .4em;
                         }
                     }
                 }
@@ -76,5 +100,6 @@ body {
             }
         }
     }
-    }
+}
+
     /*Fin Header*/
