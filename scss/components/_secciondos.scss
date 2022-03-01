@@ -9,18 +9,22 @@
         border-radius: 2em;
     }
     h2{
+        font-size: 3em;
+        font-weight: bold;
         display: flex;
         justify-content: center;
-        font-family: $fonts-titulos;
+        font-family: 'Spinnaker', sans-serif;
         color: $color-violeta;
         margin-bottom: 1em;
         @media screen and (max-width: 480px) {
             width: 100%;
-            font-size: 1.3em;
         }
     }
     .div-contenedor{
         .contenedor1{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 2em;
+            }
             h3{
                 display: flex;
                 justify-content: center;
@@ -34,6 +38,9 @@
             }
         }
         .contenedor2{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 2em;
+            }
             h3{
                 display: flex;
                 justify-content: center;
@@ -48,6 +55,9 @@
         }
         .contenedor3{
             margin-bottom: 0.5em;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 2em;
+            }
             h3{
                 display: flex;
                 justify-content: center;
@@ -63,6 +73,9 @@
     }
     .div-contenedor2{
         .contenedor4{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 2em;
+            }
             h3{
                 display: flex;
                 justify-content: center;
@@ -76,6 +89,9 @@
             }
         }
         .contenedor5{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 2em;
+            }
             h3{
                 display: flex;
                 justify-content: center; 
@@ -89,6 +105,9 @@
             }
         }
         .contenedor6{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 2em;
+            }
             h3{
                 display: flex;
                 justify-content: center; 

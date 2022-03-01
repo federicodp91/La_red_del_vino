@@ -2,98 +2,98 @@
 @import '../base/mapas';
 /*Header*/
 body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     overflow-x:hidden;
     header{
-        .container-fluid{
-            padding-bottom: 35%;
-            background-image: url('../src/multimedia/imagenes/imagenes/barril.jpg');
-            background-size:cover;
-            background-attachment: fixed;
-            .navbar-brand{
-            }
-            .barra-navegacion{
-                font-size: 1.2em;
-                font-family:'Spinnaker', sans-serif; 
-                font-weight: bold;
-                color: $color-gris;
-                opacity: .8;
-                text-decoration: none;
-                list-style: none;
-                .nav-item{
-                    .nav-link{
-                    color:#000;
-                    opacity: .8;
-                    text-decoration: none;
-                    padding: .3em 0;
-                    margin: 0 1em;
-                    position: relative;
-                    letter-spacing: 2px;
-                    &:last-child{
-                        margin-right: 0;
-                    }
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 2px;
-                        background-color: $color-violeta;
-                        left: 0;
-                        transform: scaleX(0);
-                        transition: all 1s;
-                    }
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 2px;
-                        background-color: $color-violeta;
-                        left: 0;
-                        transform: scaleX(0);
-                        transition: all .5s;
-                    }
-                    &::before{
-                        top: 0;
-                        transform-origin: left;
-                    }
-                    &::after{
-                        bottom: 0;
-                        transform-origin: right;
-                    }
-                    &:hover::before{
-                        transform: scaleX(1);
-                    }
-                    &:hover::after{
-                        transform: scaleX(1);
-                    }
-                    @media screen and (max-width: 991px) {
-                        color: white;
-                        display: inline-block;
-                        margin: .3em;
-                        margin-bottom: .4em;
+        position: relative;
+        min-height: 100vh;
+        margin-top: -12%;
+        padding-bottom: 60%;
+        margin-bottom: 5%;
+        @media screen and (max-width: 630px) {
+            min-height: 80vh;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .navbar{
+            padding: 0;
+            .container-fluid{
+                .navbar-collapse{
+                    .navbar-nav{
+                        .nav-item{
+                            .nav-link{
+                                color:#fff;
+                                opacity: .6;
+                                text-decoration: none;
+                                padding: .3em 0;
+                                margin: 0 1em;
+                                position: relative;
+                                letter-spacing: 2px;
+                                &::before{
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: #fff;
+                                    left: 0;
+                                    transform: scaleX(0);
+                                    transition: all 1s;
+                                }
+                                &::after{
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: #fff;
+                                    left: 0;
+                                    transform: scaleX(0);
+                                    transition: all .5s;
+                                }
+                                &::before{
+                                    top: 0;
+                                    transform-origin: left;
+                                }
+                                &::after{
+                                    bottom: 0;
+                                    transform-origin: right;
+                                }
+                                &:hover::before{
+                                    transform: scaleX(1);
+                                }
+                                &:hover::after{
+                                    transform: scaleX(1);
+                                }
+                                @media screen and (max-width: 991px) {
+                                    width: 13em;
+                                }
+                            }
                         }
                     }
                 }
-            }
-            .contenedor{
-                .contenedor-titulo{
-                    .la-red{
-                        color: map-get($titulo-standar, color );
-                        font-size: map-get($titulo-standar, size);
-                        font-family: map-get($titulo-standar, family);
-                        margin-top: -2.2%;
-                    }
-                }
-                .contenedor-subtitulo{
-                    .titulo{
-                        color:map-get($subtitulo-standar, color);
-                        opacity: map-get($subtitulo-standar, opacity);
-                        font-size: map-get($subtitulo-standar, size);
-                        font-family:map-get($subtitulo-standar, family);
-                        margin-top: -.5%;
-                        @media screen and (max-width: 991px) {
-                            display:inline;
-                            background-color: whitesmoke;
+                .contenedor{
+                    .contenedor-subtitulo{
+                        a{
+                            text-decoration: none;
+                            .sub-titulo{
+                                color: map-get($titulo-standar, color);
+                                opacity: .7;
+                                font-size: 1.3em;
+                                font-family:map-get($titulo-standar, family);
+                                margin-right: 1.2em;
+                                text-align: center;
+                                padding-top: .5em;
+                                @media screen and (max-width: 1191px) {
+                                    display: none;
+                                }
+                            }
                         }
                     }
                 }
@@ -101,5 +101,4 @@ body {
         }
     }
 }
-
-    /*Fin Header*/
+/*Fin Header*/

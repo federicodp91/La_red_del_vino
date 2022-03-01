@@ -4,95 +4,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /*Header*/
 body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
 }
-body header .container-fluid {
-  padding-bottom: 35%;
-  background-image: url("../src/multimedia/imagenes/imagenes/barril.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+body header {
+  position: relative;
+  min-height: 100vh;
+  margin-top: -12%;
+  padding-bottom: 60%;
+  margin-bottom: 5%;
 }
-body header .container-fluid .barra-navegacion {
-  font-size: 1.2em;
-  font-family: "Spinnaker", sans-serif;
-  font-weight: bold;
-  color: #9a8c98;
-  opacity: 0.8;
-  text-decoration: none;
-  list-style: none;
+@media screen and (max-width: 630px) {
+  body header {
+    min-height: 80vh;
+  }
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link {
-  color: #000;
-  opacity: 0.8;
+body header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body header .navbar {
+  padding: 0;
+}
+body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  opacity: 0.6;
   text-decoration: none;
   padding: 0.3em 0;
   margin: 0 1em;
   position: relative;
   letter-spacing: 2px;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link:last-child {
-  margin-right: 0;
-}
-body header .container-fluid .barra-navegacion .nav-item .nav-link::before {
+body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #a6668c;
+  background-color: #fff;
   left: 0;
   transform: scaleX(0);
   transition: all 1s;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
+body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #a6668c;
+  background-color: #fff;
   left: 0;
   transform: scaleX(0);
   transition: all 0.5s;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link::before {
+body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link::before {
   top: 0;
   transform-origin: left;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
+body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   bottom: 0;
   transform-origin: right;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link:hover::before {
+body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover::before {
   transform: scaleX(1);
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link:hover::after {
+body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
   transform: scaleX(1);
 }
 @media screen and (max-width: 991px) {
-  body header .container-fluid .barra-navegacion .nav-item .nav-link {
-    color: white;
-    display: inline-block;
-    margin: 0.3em;
-    margin-bottom: 0.4em;
+  body header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    width: 13em;
   }
 }
-body header .container-fluid .contenedor .contenedor-titulo .la-red {
+body header .navbar .container-fluid .contenedor .contenedor-subtitulo a {
+  text-decoration: none;
+}
+body header .navbar .container-fluid .contenedor .contenedor-subtitulo a .sub-titulo {
   color: #a6668c;
-  font-size: 3em;
+  opacity: 0.7;
+  font-size: 1.3em;
   font-family: "PT Serif", serif;
-  margin-top: -2.2%;
+  margin-right: 1.2em;
+  text-align: center;
+  padding-top: 0.5em;
 }
-body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
-  color: black;
-  opacity: 0.6;
-  font-size: 1.5em;
-  font-family: "PT Serif", serif;
-  margin-top: -0.5%;
-}
-@media screen and (max-width: 991px) {
-  body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
-    display: inline;
-    background-color: whitesmoke;
+@media screen and (max-width: 1191px) {
+  body header .navbar .container-fluid .contenedor .contenedor-subtitulo a .sub-titulo {
+    display: none;
   }
 }
 
@@ -138,6 +140,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   transform-style: preserve-3d;
   transition: all 600ms;
   border-radius: 1.25em;
+}
+@media screen and (max-width: 576px) {
+  .seccion-uno .container-card .card-father .card {
+    object-fit: cover;
+  }
 }
 .seccion-uno .container-card .card-father .card .card-front {
   background-image: url("../src/multimedia/imagenes/imagenes/fotohome.jpg");
@@ -382,8 +389,10 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   }
 }
 .seccion-uno .row .titulo {
+  font-size: 3em;
+  font-weight: bold;
   color: #a6668c;
-  font-family: "PT Serif", serif;
+  font-family: "Spinnaker", sans-serif;
 }
 .seccion-uno .row p {
   font-size: 1.4em;
@@ -441,16 +450,22 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   }
 }
 .seccion-dos h2 {
+  font-size: 3em;
+  font-weight: bold;
   display: flex;
   justify-content: center;
-  font-family: "PT Serif", serif;
+  font-family: "Spinnaker", sans-serif;
   color: #a6668c;
   margin-bottom: 1em;
 }
 @media screen and (max-width: 480px) {
   .seccion-dos h2 {
     width: 100%;
-    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .seccion-dos .div-contenedor .contenedor1 {
+    margin-bottom: 2em;
   }
 }
 .seccion-dos .div-contenedor .contenedor1 h3 {
@@ -463,6 +478,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .seccion-dos .div-contenedor .contenedor2 {
+    margin-bottom: 2em;
+  }
 }
 .seccion-dos .div-contenedor .contenedor2 h3 {
   display: flex;
@@ -478,6 +498,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .seccion-dos .div-contenedor .contenedor3 {
   margin-bottom: 0.5em;
 }
+@media screen and (max-width: 767px) {
+  .seccion-dos .div-contenedor .contenedor3 {
+    margin-bottom: 2em;
+  }
+}
 .seccion-dos .div-contenedor .contenedor3 h3 {
   display: flex;
   justify-content: center;
@@ -488,6 +513,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .seccion-dos .div-contenedor2 .contenedor4 {
+    margin-bottom: 2em;
+  }
 }
 .seccion-dos .div-contenedor2 .contenedor4 h3 {
   display: flex;
@@ -500,6 +530,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   justify-content: center;
   margin: auto;
 }
+@media screen and (max-width: 767px) {
+  .seccion-dos .div-contenedor2 .contenedor5 {
+    margin-bottom: 2em;
+  }
+}
 .seccion-dos .div-contenedor2 .contenedor5 h3 {
   display: flex;
   justify-content: center;
@@ -510,6 +545,11 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
   display: flex;
   justify-content: center;
   margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .seccion-dos .div-contenedor2 .contenedor6 {
+    margin-bottom: 2em;
+  }
 }
 .seccion-dos .div-contenedor2 .contenedor6 h3 {
   display: flex;
@@ -532,18 +572,27 @@ body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
 .seccion-tres .card {
   box-shadow: 7px 13px 57px #000;
 }
+@media screen and (max-width: 575px) {
+  .seccion-tres .card {
+    margin-top: 2em;
+  }
+}
 .seccion-tres .card .card-body {
   font-family: "Spinnaker", sans-serif;
+}
+.seccion-tres .card .card-body .card-text {
+  font-size: 1.2em;
 }
 .seccion-tres .card .card-body .titulo-dos {
   color: black;
   opacity: 0.6;
-  font-size: 1.5em;
+  font-size: 3em;
   font-family: "Spinnaker", sans-serif;
 }
 .seccion-tres .card .card-body .lista-requisitos {
   list-style: none;
   font-family: "Spinnaker", sans-serif;
+  font-size: 1.2em;
 }
 .seccion-tres .card .card-body .lista-requisitos li::before {
   content: "*";

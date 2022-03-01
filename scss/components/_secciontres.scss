@@ -1,20 +1,27 @@
 /*Seccion tres*/
 .seccion-tres{
     margin-top: 2em;
-    margin-bottom: 10em ;
+    margin-bottom: 10em;
     .card{
         box-shadow: 7px 13px 57px #000;
+        @media screen and (max-width: 575px) {
+            margin-top: 2em;
+        }
         .card-body{
-            font-family:'Spinnaker', sans-serif; 
+            font-family:'Spinnaker', sans-serif;
+            .card-text{
+                font-size: 1.2em;
+            }
             .titulo-dos{
                 color:black;
                 opacity: 0.6;
-                font-size: 1.5em;
+                font-size: 3em;
                 font-family:'Spinnaker', sans-serif; 
             }
             .lista-requisitos{
                 list-style: none;
                 font-family:'Spinnaker', sans-serif; 
+                font-size: 1.2em;
                 li{
                     &::before {
                         content:'*';

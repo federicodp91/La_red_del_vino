@@ -9,9 +9,11 @@
         perspective: 62.5em;
         @extend %flex;
         flex-wrap: wrap;
+        
         .card-father{
             margin: 1.25em;
             perspective: 62.5em;
+            
             &:hover{
                 .card{
                     transform: rotateY(180deg);
@@ -24,6 +26,9 @@
                 transform-style: preserve-3d;
                 transition: all 600ms;
                 border-radius: 1.25em;
+                @media screen and (max-width: 576px) {
+                    object-fit: cover;
+                }
                 .card-front{
                     background-image: url('../src/multimedia/imagenes/imagenes/fotohome.jpg');
                     background-size: cover;
@@ -270,8 +275,10 @@
             margin: auto;
         }
         .titulo{
+            font-size: 3em;
+            font-weight: bold;
             color: $color-violeta;
-            font-family: $fonts-titulos;
+            font-family: 'Spinnaker', sans-serif;
         }
         p{
             font-size: 1.4em;
