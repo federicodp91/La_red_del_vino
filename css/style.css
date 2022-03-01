@@ -3,73 +3,85 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /*Header*/
-body {
-  margin: 0%;
-  padding: 0%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
-body header .container-fluid {
-  padding-bottom: 35%;
-  background-image: url("../src/multimedia/imagenes/imagenes/barril.jpg");
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: url("../src/multimedia/imagenes/imagenes/barril.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  padding-bottom: 40em;
 }
-body header .container-fluid .barra-navegacion {
-  font-size: 1.2em;
-  font-family: "Spinnaker", sans-serif;
-  font-weight: bold;
-  color: #9a8c98;
-  opacity: 0.8;
-  text-decoration: none;
-  list-style: none;
+header .container {
+  max-width: 120em;
+  width: 90%;
+  margin: 0 auto;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
-  content: " |";
-  color: #a6668c;
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
   font-size: 1.3em;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link:hover {
-  background: -webkit-linear-gradient(to right, black, #a6668c);
-  background: linear-gradient(to right, black, #a6668c);
+header .container nav .logo {
+  padding-top: 1em;
+}
+header .container nav ul {
+  display: flex;
+}
+header .container nav ul li {
+  list-style: none;
+}
+header .container nav ul a {
+  color: #000;
   opacity: 0.8;
-  color: white;
-  border-radius: 40px;
+  text-decoration: none;
+  padding: 0.3em 0;
+  margin: 0 1em;
+  position: relative;
+  letter-spacing: 2px;
 }
-body header .container-fluid .barra-navegacion .nav-item .nav-link:hover::after {
-  content: none;
+header .container nav ul a:last-child {
+  margin-right: 0;
 }
-@media screen and (max-width: 991px) {
-  body header .container-fluid .barra-navegacion .nav-item .nav-link {
-    display: inline-block;
-    margin: 0.1em;
-    background: -webkit-linear-gradient(to right, black, #a6668c);
-    background: linear-gradient(to right, black, #a6668c);
-    color: white;
-    border-radius: 40px;
-  }
-  body header .container-fluid .barra-navegacion .nav-item .nav-link::after {
-    content: none;
-  }
+header .container nav ul a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #a6668c;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 1s;
 }
-body header .container-fluid .contenedor .contenedor-titulo .la-red {
-  color: #a6668c;
-  font-size: 3em;
-  font-family: "PT Serif", serif;
-  margin-top: -2.2%;
+header .container nav ul a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #a6668c;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.5s;
 }
-body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
-  color: black;
-  opacity: 0.6;
-  font-size: 1.5em;
-  font-family: "PT Serif", serif;
-  margin-top: -0.5%;
+header .container nav ul a::before {
+  top: 0;
+  transform-origin: left;
 }
-@media screen and (max-width: 991px) {
-  body header .container-fluid .contenedor .contenedor-subtitulo .titulo {
-    display: inline;
-    background-color: whitesmoke;
-  }
+header .container nav ul a::after {
+  bottom: 0;
+  transform-origin: right;
+}
+header .container nav ul a:hover::before {
+  transform: scaleX(1);
+}
+header .container nav ul a:hover::after {
+  transform: scaleX(1);
 }
 
 /*Fin Header*/

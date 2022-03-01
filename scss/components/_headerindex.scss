@@ -2,81 +2,91 @@
 @import '../base/mapas';
 /*Header*/
 
-body {
-    margin: 0%;
-    padding: 0%;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    overflow-x:hidden ;
-    header{
-        .container-fluid{
-            padding-bottom: 35%;
-            background-image: url('../src/multimedia/imagenes/imagenes/barril.jpg');
-            background-size:cover;
-            background-attachment: fixed;
-            .barra-navegacion{
-                font-size: 1.2em;
-                font-family:'Spinnaker', sans-serif; 
-                font-weight: bold;
-                color: $color-gris;
-                opacity: .8;
-                text-decoration: none;
-                list-style: none;
-                .nav-item{
-                    .nav-link{
-                        &::after {
-                            content: ' |';
-                            color: $color-violeta;
-                            font-size: 1.3em;
-                        }
-                        &:hover {
-                            background: -webkit-linear-gradient(to right, black,  $color-violeta); 
-                            background: linear-gradient(to right, black, $color-violeta);
-                            opacity: .8;
-                            color: white;
-                            border-radius: 40px;
-                            &::after{
-                                content: none;
-                            }
-                        }
-                        @media screen and (max-width: 991px) {
-                            display: inline-block;
-                            margin: .1em;
-                            background: -webkit-linear-gradient(to right, black,  $color-violeta); 
-                            background: linear-gradient(to right, black, $color-violeta);
-                            color: white;
-                            border-radius: 40px;
-                            &::after{
-                                content: none;
-                            }
-                        }
-                    }
-                }
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background: url('../src/multimedia/imagenes/imagenes/barril.jpg');
+    background-size: cover;
+    padding-bottom: 40em;
+    .container{
+        max-width: 120em;
+        width: 90%;
+        margin: 0 auto;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: 1.3em;
+            .logo{
+                padding-top: 1em;
             }
-            .contenedor{
-                .contenedor-titulo{
-                    .la-red{
-                        color: map-get($titulo-standar, color );
-                        font-size: map-get($titulo-standar, size);
-                        font-family: map-get($titulo-standar, family);
-                        margin-top: -2.2%;
-                    }
+            ul{
+                display: flex;
+                li{
+                    list-style: none;
                 }
-                .contenedor-subtitulo{
-                    .titulo{
-                        color:map-get($subtitulo-standar, color);
-                        opacity: map-get($subtitulo-standar, opacity);
-                        font-size: map-get($subtitulo-standar, size);
-                        font-family:map-get($subtitulo-standar, family);
-                        margin-top: -.5%;
-                        @media screen and (max-width: 991px) {
-                            display:inline;
-                            background-color: whitesmoke;
-                        }
+                a{
+                    color:#000;
+                    opacity: .8;
+                    text-decoration: none;
+                    padding: .3em 0;
+                    margin: 0 1em;
+                    position: relative;
+                    letter-spacing: 2px;
+                    &:last-child{
+                        margin-right: 0;
                     }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $color-violeta;
+                        left: 0;
+                        transform: scaleX(0);
+                        transition: all 1s;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $color-violeta;
+                        left: 0;
+                        transform: scaleX(0);
+                        transition: all .5s;
+                    }
+                    &::before{
+                        top: 0;
+                        transform-origin: left;
+                    }
+                    &::after{
+                        bottom: 0;
+                        transform-origin: right;
+                    }
+                    &:hover::before{
+                        transform: scaleX(1);
+                    }
+                    &:hover::after{
+                        transform: scaleX(1);
+                    }
+                    
                 }
             }
         }
     }
 }
+
+
+
+
+
 
     /*Fin Header*/
