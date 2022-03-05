@@ -109,6 +109,9 @@ body header .navbar .container-fluid .contenedor .contenedor-subtitulo a .sub-ti
 }
 
 /*Seccion Uno*/
+.seccion-uno {
+  padding-top: 40px;
+}
 .seccion-uno .container-card {
   max-width: 74em;
   margin: auto auto;
@@ -446,6 +449,7 @@ body header .navbar .container-fluid .contenedor .contenedor-subtitulo a .sub-ti
   font-family: "Spinnaker", sans-serif;
   color: #a6668c;
   margin-bottom: 1em;
+  padding-top: 40px;
 }
 @media screen and (max-width: 480px) {
   .seccion-dos h2 {
@@ -557,6 +561,7 @@ body header .navbar .container-fluid .contenedor .contenedor-subtitulo a .sub-ti
 .seccion-tres {
   margin-top: 2em;
   margin-bottom: 10em;
+  padding-top: 60px;
 }
 .seccion-tres .card {
   box-shadow: 7px 13px 57px #000;
